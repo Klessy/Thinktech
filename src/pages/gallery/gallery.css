@@ -1,0 +1,331 @@
+.projectPage__con {
+  /* max-width: 107rem;
+  margin: 0 auto;
+  padding: 5rem 4rem; */
+}
+
+.project {
+  background-color: #f9f9f9;
+  padding: 15rem 0;
+}
+@media (max-width: 1020px) {
+  .project {
+    padding: 8rem 0;
+  }
+}
+.project p {
+  color: #147efb;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.project h3 {
+  font-size: 2.5rem;
+  color: #2d2e32;
+  margin-bottom: 6rem;
+}
+
+.portfolio-categories {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.primary {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.white {
+  box-shadow: none;
+  background-color: #fff;
+}
+
+.cat-btn {
+  color: black !important;
+  border: none;
+  font-weight: 600 !important;
+  background-color: white;
+  cursor: pointer;
+  padding: 1rem 1.3rem;
+  font-family: "Mulish", sans-serif !important;
+  font-size: 1.7rem;
+}
+@media (max-width: 400px) {
+  .cat-btn {
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.porfolio__projects {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  width: 100%;
+  height: auto;
+  gap: 5rem;
+}
+.porfolio__projects .pro {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1.7rem;
+}
+.porfolio__projects .pro__1 {
+  height: 40rem;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 8rem;
+}
+@media (max-width: 1020px) {
+  .porfolio__projects .pro__1 {
+    height: 75rem;
+    flex-direction: column !important;
+    gap: 3rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .porfolio__projects .pro__1 {
+    width: 100%;
+  }
+}
+.porfolio__projects .pro__img {
+  width: 53rem;
+  height: auto;
+  border-radius: 1.7rem;
+  background-color: rgba(118, 118, 118, 0.2);
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 650px) {
+  .porfolio__projects .pro__img {
+    width: 100%;
+  }
+}
+.porfolio__projects .pro__img img {
+  width: 100%;
+  height: auto;
+}
+.porfolio__projects .pro__text {
+  display: flex;
+  width: 30rem;
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+@media (max-width: 1020px) {
+  .porfolio__projects .pro__text {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .porfolio__projects .pro__text {
+    width: 100%;
+  }
+}
+.porfolio__projects .pro__text img {
+  width: 7rem;
+  position: absolute;
+  top: -2px;
+  right: -19px;
+}
+.porfolio__projects .pro__text h3 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #2d2e32;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.porfolio__projects .pro__text p {
+  font-size: 1.7rem;
+  color: #767676;
+  text-align: center;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.stack {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.stack p {
+  color: black !important;
+  font-weight: 600 !important;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.3rem;
+  font-family: "Mulish", sans-serif !important;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+.links a {
+  font-size: 1.7rem;
+  color: #2d2e32;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.links a i {
+  font-size: 2.8rem;
+}
+.links a .link-icon {
+  font-size: 2rem !important;
+}
+.links a img {
+  width: 3.5rem;
+}
+.links a:hover {
+  color: #147efb;
+  transition: all 0.3s;
+}
+
+.reversed-proj {
+  flex-direction: row-reverse !important;
+}
+
+/*=========================== Pagination Buttons =============================== */
+.project-page-btn-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0;
+  padding: 2rem 0;
+}
+
+.project-page-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  outline: none;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.project-page-btn-active {
+  background-color: var(--color-primary);
+  color: var(--white);
+}
+
+/*====================== PROJECT SIDEBAR =========================*/
+.projectPage-wrapper {
+  display: flex;
+  align-items: flex-start;
+  /* padding: 5rem 4rem; */
+  padding: 5rem 0;
+  gap: 5rem;
+}
+
+.search-bar {
+  width: 100%;
+  /* max-width: 33.333333%; */
+}
+
+.project__sidebar {
+  /* flex: 0 0 33.333333%;
+  max-width: 33.333333%; */
+  margin-top: 2.5rem;
+}
+
+.widget_search {
+  margin: 0 0 50px;
+}
+
+h2.widget-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+form.search-form {
+  position: relative;
+}
+
+.search__box .search-form input {
+  border: 0 none;
+  background: #f5f5f5;
+  height: 60px;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 72px 0 25px;
+  font-family: var(--font-primary);
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.search-form input:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.search-form .search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: 0 none;
+  outline: none;
+  height: 100%;
+  width: 60px;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 20px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.cat-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  color: var(--color-body);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .projectPage-wrapper {
+    flex-direction: column;
+  }
+
+  .projectPage__con {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projectPage-wrapper {
+    flex-direction: column;
+  }
+
+  .projectPage__con {
+    width: 100%;
+  }
+
+  /* .project-page-btn-con {
+    flex-wrap: wrap;
+  } */
+}

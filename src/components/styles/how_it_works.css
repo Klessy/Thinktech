@@ -1,0 +1,152 @@
+.how__it__works-section {
+  background-image: url("../../assets/bg/home-four-video-2.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.how__it__works-con {
+  position: relative;
+  padding: 10rem 0;
+  overflow: hidden;
+  padding-left: 14rem;
+  padding-right: 1rem;
+}
+
+.bg-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 30%;
+  position: absolute;
+  background: var(--white);
+  border-radius: 25px;
+}
+
+.how__it__works-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.how__it__works-img {
+  position: relative;
+  width: 55%;
+}
+
+.how__it__works-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.how__it__works-shape-one {
+  position: absolute;
+  top: -20px;
+  left: -40px;
+}
+
+.how__it__works-shape-two {
+  position: absolute;
+  bottom: -40px;
+  left: -50px;
+}
+
+.bg-rotate {
+  position: absolute;
+  right: -20%;
+  /* top: -35%; */
+}
+
+.bg-rotate img {
+  width: 100%;
+  object-fit: cover;
+  animation: logo-spin infinite 20s linear;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.how__it__works-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.how__it__works-title {
+  margin-bottom: 3rem;
+}
+
+.how__it__works-content p {
+  margin-bottom: 3rem;
+}
+
+/* ========================= MOBILE VIEW ========================*/
+
+@media screen and (max-width: 1200px) {
+  .bg-rotate {
+    position: absolute;
+    right: -35%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .how__it__works-con {
+    position: relative;
+    padding: 5rem 3rem;
+    overflow: hidden;
+  }
+
+  .bg-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0%;
+    position: none;
+    background: var(--white);
+    border-radius: 25px;
+  }
+
+  .how__it__works-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .how__it__works-img {
+    position: relative;
+    width: 100%;
+  }
+
+  .how__it__works-content {
+    width: 100%;
+  }
+
+  .how__it__works-title {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .how__it__works-shape-one {
+    display: none;
+  }
+
+  .how__it__works-shape-two {
+    display: none;
+  }
+
+  .bg-rotate {
+    display: none;
+  }
+}
