@@ -9,7 +9,8 @@
 
 .course-summary {
   flex: 0 0 66.666667%;
-  width: 150ch;
+  /* width: 150ch; */
+  width: 130ch;
   /* min-width: 66.666667%; */
   /* max-width: 66.666667%; */
   padding-left: 15px;
@@ -372,7 +373,7 @@ ul li {
 .course-content-wrapper {
   display: flex;
   /* justify-content: space-between; */
-  gap: 6rem;
+  gap: 2rem;
 }
 
 .course-details-sidebar {
