@@ -311,6 +311,7 @@ MOBILE VIEW
   .course__action-btn {
     padding: 10px 20px;
     font-size: 16px;
+    line-height: 50px;
     /* font-weight: 700; */
   }
 
@@ -319,7 +320,7 @@ MOBILE VIEW
   }
 
   .content-top {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .hover-course__title {
