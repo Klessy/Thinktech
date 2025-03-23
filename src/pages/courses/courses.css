@@ -315,6 +315,14 @@ MOBILE VIEW
   }
 
   .hover-bottom-content {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+  }
+
+  .content-top {
+    margin-bottom: 12px;
+  }
+
+  .hover-course__title {
+    margin-bottom: 10px;
   }
 }
