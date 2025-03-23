@@ -144,6 +144,7 @@
 }
 
 .hover-bottom-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -311,11 +312,10 @@ MOBILE VIEW
   .course__action-btn {
     padding: 10px 20px;
     font-size: 16px;
-    font-weight: 700;
+    /* font-weight: 700; */
   }
 
   .hover-bottom-content {
-    display: flex;
     margin-bottom: 15px;
   }
 }
