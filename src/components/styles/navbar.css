@@ -16,15 +16,15 @@ nav {
 .navbar__links {
   display: flex;
   gap: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .active-nav {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   background: rgb(24, 59, 231);
   color: var(--white);
-  padding: 1.5rem;
+  padding: 1.2rem;
   border: 2px solid transparent;
   border-radius: 8px 8px 0 0;
   /* transition: var(--transition); */
