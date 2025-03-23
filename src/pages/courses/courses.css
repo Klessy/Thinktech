@@ -104,6 +104,7 @@
   margin: 0 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -179,6 +180,7 @@
 
 .author-meta {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -193,12 +195,10 @@
 
 .edu-meta {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   list-style: none;
   padding: 0;
-  /* margin: 0 -20px; */
-  /* margin: 0 ; */
 }
 
 .hover-course__title {
