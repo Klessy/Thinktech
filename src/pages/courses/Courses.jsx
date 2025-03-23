@@ -80,12 +80,12 @@ const Courses = () => {
                             Eruteya Precious
                           </span>
                         </div>
-                        <div className="edu-meta">
+                        <ul className="edu-meta">
                           <li className="course_flex">
                             <CgNotes style={{ fontSize: "20px" }} />
                             <span className="lesson">16 Lessons</span>
                           </li>
-                        </div>
+                        </ul>
                       </div>
                       <div className="read-more-btn">
                         {/* <Button
