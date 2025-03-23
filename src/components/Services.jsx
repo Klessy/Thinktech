@@ -39,7 +39,9 @@ const Services = () => {
                     <h6>{title}</h6>
                     <p>{desc}</p>
                     <div className="read-more">
-                      <Link className="learn__more">{btn}</Link>
+                      <Link className="learn__more" to={`/courses/${id}`}>
+                        {btn}
+                      </Link>
                     </div>
                   </div>
                 </div>

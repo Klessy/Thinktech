@@ -546,6 +546,52 @@ const coursePageData = [
   },
   {
     id: 2,
+    course_img: Course_3,
+    course_title: "Data Analysis",
+    authorImg: Course_1,
+    author_title: "George",
+    course_desc: "The Complete Guide to Data Analysis",
+    lessons: 17,
+    price: "75",
+    course_details:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",
+    overview: {
+      course_complete_desc:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, a maxime! Doloremque a delectus molestias, consequatur quisquam sunt fuga, iusto quaerat mollitia ut nobis ipsum eius, laudantium adipisci ab quas? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque quam explicabo illum perspiciatis, quis alias, tempora ex dolor, molestias ratione voluptatibus dolorum! Sint autem dolores optio earum modi officiis?",
+      you_will_learn: [
+        "Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor",
+        "",
+      ],
+      certification:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sint corrupti reiciendis quia praesentium doloremque. Itaque voluptate quam voluptatibus reiciendis quisquam quasi, veniam id autem cumque, quia perferendis minima ex.",
+    },
+    introduction: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa?",
+    ],
+    instructor: {
+      instructorImg: DataInstructorWhiteImg,
+      instructorRole: "Data Analyst",
+      instructorDesc:
+        "George is an instructor and developer living in a suburb of Washington, DC. he has been assigned to aspen ecosystems research and has been involved in several special assignments.",
+      whatsapp: "",
+      twitter: "",
+      linkedln: "",
+      fb: "",
+    },
+    courseSidebar: {
+      duration: "4 Weeks",
+      lessons: "12 Lessons",
+      skillLevel: "Beginner",
+      language: "English",
+      quizzes: 4,
+      certificate: "Yes",
+      passPercentage: 80,
+      deadline: "03 March, 2025",
+      instructorName: "Mr George",
+    },
+  },
+  {
+    id: 3,
     course_img: Course_2,
     course_title: "Animation",
     authorImg: Course_1,
@@ -589,52 +635,6 @@ const coursePageData = [
       passPercentage: 80,
       deadline: "03 March, 2025",
       instructorName: "Mr Paul",
-    },
-  },
-  {
-    id: 3,
-    course_img: Course_3,
-    course_title: "Data Analysis",
-    authorImg: Course_1,
-    author_title: "George",
-    course_desc: "The Complete Guide to Data Analysis",
-    lessons: 17,
-    price: "75",
-    course_details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",
-    overview: {
-      course_complete_desc:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, a maxime! Doloremque a delectus molestias, consequatur quisquam sunt fuga, iusto quaerat mollitia ut nobis ipsum eius, laudantium adipisci ab quas? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque quam explicabo illum perspiciatis, quis alias, tempora ex dolor, molestias ratione voluptatibus dolorum! Sint autem dolores optio earum modi officiis?",
-      you_will_learn: [
-        "Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor",
-        "",
-      ],
-      certification:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sint corrupti reiciendis quia praesentium doloremque. Itaque voluptate quam voluptatibus reiciendis quisquam quasi, veniam id autem cumque, quia perferendis minima ex.",
-    },
-    introduction: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa?",
-    ],
-    instructor: {
-      instructorImg: DataInstructorWhiteImg,
-      instructorRole: "Data Analyst",
-      instructorDesc:
-        "George is an instructor and developer living in a suburb of Washington, DC. he has been assigned to aspen ecosystems research and has been involved in several special assignments.",
-      whatsapp: "",
-      twitter: "",
-      linkedln: "",
-      fb: "",
-    },
-    courseSidebar: {
-      duration: "4 Weeks",
-      lessons: "12 Lessons",
-      skillLevel: "Beginner",
-      language: "English",
-      quizzes: 4,
-      certificate: "Yes",
-      passPercentage: 80,
-      deadline: "03 March, 2025",
-      instructorName: "Mr George",
     },
   },
   {
