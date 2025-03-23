@@ -325,6 +325,10 @@ form.search-form {
     width: 100%;
   }
 
+  .search__box .search-form input {
+    width: 100%;
+  }
+
   /* .project-page-btn-con {
     flex-wrap: wrap;
   } */
