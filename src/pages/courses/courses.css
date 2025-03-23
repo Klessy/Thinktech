@@ -145,7 +145,7 @@
 }
 
 .hover-bottom-content {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -316,5 +316,7 @@ MOBILE VIEW
 
   .hover-bottom-content {
     margin-bottom: 15px;
+    justify-content: center;
+    gap: 1.5rem;
   }
 }
