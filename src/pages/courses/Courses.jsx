@@ -76,9 +76,7 @@ const Courses = () => {
                       <div className="hover-bottom-content">
                         <div className="author-meta">
                           <img src={Course_1} alt="" />
-                          <span className="author__title">
-                            Eruteya Precious
-                          </span>
+                          <span className="author__title">Precious</span>
                         </div>
                         <ul className="edu-meta">
                           <li className="course_flex">

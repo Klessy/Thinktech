@@ -115,9 +115,8 @@
 
 .course__title {
   margin-bottom: 16px;
-  font-size: 18px;
-  display: inline-block;
-  /* line-height: 1.6; */
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .price__wrapper {
@@ -317,7 +316,5 @@ MOBILE VIEW
 
   .hover-bottom-content {
     margin-bottom: 15px;
-    justify-content: center;
-    gap: 1.5rem;
   }
 }
