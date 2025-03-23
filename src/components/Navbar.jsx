@@ -64,8 +64,8 @@ const Navbar = () => {
               <li key={id}>
                 <NavLink
                   to={path}
-                  className={({ isActive }) => (isActive ? "active-nav" : "")}
-                  // onClick={({ isActive }) => (isActive ? "active" : "")}
+                  className={({ isActive }) => (isActive ? "active-nav " : "")}
+                  onClick={() => setIsNavShowing((prev) => !prev)}
                 >
                   {name}
                 </NavLink>
