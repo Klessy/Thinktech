@@ -508,7 +508,7 @@ ABOUT TEAM
   content: "";
   left: 0;
   top: 0;
-  width: 300px;
+  width: 350px;
   height: 100%;
   opacity: 0;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -519,7 +519,7 @@ ABOUT TEAM
   position: absolute;
   z-index: 2;
   bottom: 40px;
-  width: 300px;
+  width: 350px;
   text-align: center;
 }
 
@@ -567,7 +567,7 @@ ABOUT TEAM
 }
 
 .team__img {
-  width: 300px;
+  width: 350px;
   height: 400px;
   /* height: 100%; */
 }
@@ -582,7 +582,7 @@ ABOUT TEAM
 
 .thinktech__instructor-info {
   /* width: 450px; */
-  width: 300px;
+  width: 350px;
   margin-top: 25px;
 }
 
