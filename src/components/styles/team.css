@@ -22,7 +22,7 @@
 
 .team__container-bg-two {
   position: absolute;
-  right: 80px;
+  right: 70px;
   bottom: 80px;
 }
 
@@ -165,6 +165,20 @@
 }
 
 /* ======================== MOBILE VIEW ============================= */
+
+@media screen and (min-width: 1500px) {
+  .team__container-bg-one {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+  }
+
+  .team__container-bg-two {
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .team__container-wrapper {
