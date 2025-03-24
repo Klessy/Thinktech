@@ -22,7 +22,7 @@
 
 .team__container-bg-two {
   position: absolute;
-  right: 70px;
+  right: 0;
   bottom: 80px;
 }
 
@@ -175,7 +175,7 @@
 
   .team__container-bg-two {
     position: absolute;
-    right: 100px;
+    right: 130px;
     bottom: 80px;
   }
 }
