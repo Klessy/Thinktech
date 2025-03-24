@@ -16,14 +16,14 @@
 
 .team__container-bg-one {
   position: absolute;
-  left: -80px;
+  left: 0;
   bottom: 100%;
 }
 
 .team__container-bg-two {
   position: absolute;
-  right: -70px;
-  bottom: 90px;
+  right: 80px;
+  bottom: 80px;
 }
 
 .team-wrap {
