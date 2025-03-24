@@ -622,6 +622,26 @@ ABOUT TEAM
 MOBILE VIEW 
 =============================================*/
 
+@media screen and (min-width: 1500px) {
+  .team__card-inner::after {
+    width: 450px;
+  }
+
+  .hover-items {
+    width: 450px;
+  }
+
+  .team__img {
+    width: 450px;
+    height: 500px;
+  }
+
+  .thinktech__instructor-info {
+    width: 450px;
+    margin-top: 25px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .team__wrapper {
     grid-template-columns: repeat(2, 1fr);

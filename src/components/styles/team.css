@@ -165,6 +165,7 @@
 }
 
 /* ======================== MOBILE VIEW ============================= */
+
 @media screen and (max-width: 1200px) {
   .team__container-wrapper {
     flex-wrap: wrap;
