@@ -306,6 +306,17 @@ form.search-form {
   font-weight: 500;
 }
 
+@media screen and (min-width: 1500px) {
+  .porfolio__projects .pro__1 {
+    padding: 2rem;
+    gap: 8rem;
+  }
+
+  .search__box .search-form input {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .projectPage-wrapper {
     flex-direction: column;
