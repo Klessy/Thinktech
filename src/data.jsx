@@ -511,16 +511,16 @@ const coursePageData = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",
     overview: {
       course_complete_desc:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, a maxime! Doloremque a delectus molestias, consequatur quisquam sunt fuga, iusto quaerat mollitia ut nobis ipsum eius, laudantium adipisci ab quas? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque quam explicabo illum perspiciatis, quis alias, tempora ex dolor, molestias ratione voluptatibus dolorum! Sint autem dolores optio earum modi officiis?",
+        "During this Course we explore how to make and materializing ideas into Web apps. This course introduces you to the basics of programming with HTML, CSS and javaScript. This course is Structured so that it engages participants in building Web applications. This course is solely project based",
       you_will_learn: [
-        "Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor",
+        "Basics of Web Programming \n Build Real Life Demo Projects \n Understanding how Version Control Works \n Create your own Web Applicaton \n Deploy your Projects",
         "",
       ],
       certification:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sint corrupti reiciendis quia praesentium doloremque. Itaque voluptate quam voluptatibus reiciendis quisquam quasi, veniam id autem cumque, quia perferendis minima ex.",
     },
     introduction: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa?",
+      "Structure of an HTML Page \n Introduction to HTML\n Core HTML Tags. HTML Text Formatting and decoration \n HTML Image Insertion and Embedding Videos. Absolute Vs Relative File Referencing \n Link and Tables Creation in HTML \n Forms in HTML \n Introduction to CSS. \n Adding CSS CSS Syntax \n CSS Colors and Background \n CSS Height and Width \n CSS display \n CSS Box Model \n CSS Flexbox \n CSS Animations and Transitions \n CSS Media Query \n JavaScript Introduction \n JS Output \n JS Syntax \n JS Variables and comments \n Data types \n Introduction to Methods, Conditional Statements, Loops and Arrays \n JS Objects \n JS Events \n DOM Manipulation \n Developing React Apps",
     ],
     instructor: {
       instructorImg: WebInstructorImg,
@@ -604,16 +604,16 @@ const coursePageData = [
 
     overview: {
       course_complete_desc:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, a maxime! Doloremque a delectus molestias, consequatur quisquam sunt fuga, iusto quaerat mollitia ut nobis ipsum eius, laudantium adipisci ab quas? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque quam explicabo illum perspiciatis, quis alias, tempora ex dolor, molestias ratione voluptatibus dolorum! Sint autem dolores optio earum modi officiis?",
+        "This Course is designed for absolute beginners to learn how to code. This project is structured so that it engages Participants with making fun games such as Flappy Bird and Action Games Here, We teach the basics of programming where you program in a non complex web",
       you_will_learn: [
-        "Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor",
+        "Create Simple Motion \n Organise Looks and Control of your Character \n Tell Stories using Scratch \n Variables \n Create Simple Animation \n Build Games",
         "",
       ],
       certification:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sint corrupti reiciendis quia praesentium doloremque. Itaque voluptate quam voluptatibus reiciendis quisquam quasi, veniam id autem cumque, quia perferendis minima ex.",
     },
     introduction: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa?",
+      "Introduction to the Course \n Overview of Scratch \n Working with Motions \n Add Sounds and Control to your Charater \n Looks and Sensing in Scratch \n Variables \n Building your First Game \n Download and Animate Background \n Adding Character \n Sensing Objects \n Create a Flappy Bird Game \n Build and Animate an Action Game",
     ],
     instructor: {
       instructorImg: CourseInstructorImg,
