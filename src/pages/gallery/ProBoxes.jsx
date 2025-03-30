@@ -8,7 +8,7 @@ const ProBoxes = ({ projects, onFilterData }) => {
         <ProBox
           key={probox.id}
           title={probox.title}
-          img={probox.img}
+          img={probox.imgBox}
           description={probox.desc}
           techno1={probox.tech1}
           techno2={probox.tech2}

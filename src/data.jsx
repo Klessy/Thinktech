@@ -38,6 +38,8 @@ import ThinktechInstructor from "./assets/logo/working-emoji.png";
 //Project Images
 import Project_1 from "./assets/projects/easybank-desktop-preview.jpg";
 import Project_2 from "./assets/projects/flyo-desktop-preview.jpg";
+import Project_3 from "./assets/projects/thinktech-movie-search-app.png";
+import Project_4 from "./assets/projects/thinktech-ecommerce-app.png";
 
 //About Us
 import AboutSlide_1 from "./assets/images/cross-sitting-to-learn.png";
@@ -275,9 +277,10 @@ const projectData = [
     id: 1,
     category: "Web Development",
     image: Project_1,
-    title: "Artificial Design Template Demo",
+    imgBox: Project_3,
+    title: "Movie Gallery App",
     desc: " This is an Artificial Intelligence template with state of the art design",
-    demo: "https://thinktech-ai-temp.netlify.app",
+    demo: "https://thinktech-cinemate.netlify.app/",
     tech1: "React",
     tech2: "SCSS",
     scrollY: -74,
@@ -288,6 +291,7 @@ const projectData = [
     id: 2,
     category: "Data Analysis",
     image: Project_2,
+    imgBox: Project_3,
     title: "Restuarant Template Good User Experience Demo",
     desc: "Responsive Restuarant Interface where users can order food from the convenience of their homes",
     demo: "https://thinktech-restuarant-temp.netlify.app",
@@ -301,6 +305,7 @@ const projectData = [
     id: 3,
     category: "Forex",
     image: Project_2,
+    imgBox: Project_3,
     title: "Video App Implemented with a Search Function",
     desc: "Tried of static content?, Want a graphic illustration? Welcome to my video app where users can search for video context using RestApi and Material UI",
     demo: "https://eloquent-quokka-0074eb.netlify.app",
@@ -314,6 +319,7 @@ const projectData = [
     id: 4,
     category: "Animation & Game Dev",
     image: Project_1,
+    imgBox: Project_3,
     title: "Exercise Application Demo",
     desc: "Keep the body fit. Welcome to my exercise app where users can search for any exercise. Graphic illustration and description of exercise is provided using Giff",
     demo: "https://preeminent-rugelach-5ab031.netlify.app/",
@@ -327,6 +333,7 @@ const projectData = [
     id: 5,
     category: "Mobile Development",
     image: Project_1,
+    imgBox: Project_3,
     title: "Restuarant Bootstrap Demo",
     desc: "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure earum  ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
     demo: "https://precioustutorials.com",
@@ -340,6 +347,7 @@ const projectData = [
     id: 6,
     category: "Data Analysis",
     image: Project_2,
+    imgBox: Project_3,
     title: "Projecct Title One (UIUX)",
     desc: " architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
     demo: "https://precioustutorials.com",
@@ -354,9 +362,10 @@ const projectData = [
     id: 7,
     category: "Web Development",
     image: Project_2,
-    title: "Projecct Title One (UIUX)",
+    imgBox: Project_4,
+    title: "WebStore",
     desc: "An Ecommerce Template made and designed by think tech",
-    demo: "https://thinktech-ecom-template.netlify.app",
+    demo: "https://thinktech-codebook.netlify.app/",
     github: "https://github.com/klessy",
     tech1: "React",
     tech2: "SCSS",
