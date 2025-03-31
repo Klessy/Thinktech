@@ -40,6 +40,7 @@ import Project_1 from "./assets/projects/easybank-desktop-preview.jpg";
 import Project_2 from "./assets/projects/flyo-desktop-preview.jpg";
 import Project_3 from "./assets/projects/thinktech-movie-search-app.png";
 import Project_4 from "./assets/projects/thinktech-ecommerce-app.png";
+import Project_5 from "./assets/projects/thinktech-flappybird.png";
 
 //About Us
 import AboutSlide_1 from "./assets/images/cross-sitting-to-learn.png";
@@ -319,10 +320,10 @@ const projectData = [
     id: 4,
     category: "Animation & Game Dev",
     image: Project_1,
-    imgBox: Project_3,
-    title: "Exercise Application Demo",
+    imgBox: Project_5,
+    title: "Flappy Bird Animation",
     desc: "Keep the body fit. Welcome to my exercise app where users can search for any exercise. Graphic illustration and description of exercise is provided using Giff",
-    demo: "https://preeminent-rugelach-5ab031.netlify.app/",
+    demo: "https://thinktech-flappybird.netlify.app/",
     tech1: "React",
     tech2: "SCSS",
     scrollY: -74,
@@ -377,6 +378,7 @@ const projectData = [
     id: 8,
     category: "Web Development",
     image: Project_2,
+    imgBox: Project_4,
     title: "Projecct Title One (UIUX)",
     desc: "An Ecommerce Template made and designed by think tech",
     demo: "https://thinktech-ecom-template.netlify.app",
@@ -391,6 +393,7 @@ const projectData = [
     id: 9,
     category: "Web Development",
     image: Project_2,
+    imgBox: Project_4,
     title: "Projecct Title One (UIUX)",
     desc: "An Ecommerce Template made and designed by think tech",
     demo: "https://thinktech-ecom-template.netlify.app",
