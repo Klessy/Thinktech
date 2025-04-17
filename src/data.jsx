@@ -27,7 +27,7 @@ import cssImg from "./assets/logo/css.png";
 import pythonImg from "./assets/logo/python-transparent.png";
 import powerBI from "./assets/logo/powerbi-transparent.png";
 import excelImg from "./assets/logo/excel-transparent.png";
-import SQLImg from "./assets/logo/SQL-yellow.png";
+import SQLImg from "./assets/logo/SQl-yellow.png";
 import scratchImg from "./assets/logo/scratch-img.png";
 import reactImg from "./assets/logo/react.png";
 import reduxImg from "./assets/logo/redux.png";
