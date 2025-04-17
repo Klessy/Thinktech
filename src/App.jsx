@@ -9,6 +9,7 @@ import {
   NotFound,
   Team,
   CourseDetail,
+  HowItWorksPage,
 } from "./pages";
 import { Navbar, Footer, ScrollToTop } from "./components";
 
@@ -21,7 +22,7 @@ const App = () => {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="courses" element={<Courses />} />
-        {/* <Route path="courses/details" element={<CourseDetail />} /> */}
+        <Route path="/how_it_works" element={<HowItWorksPage />} />
         <Route path="courses/:courseId" element={<CourseDetail />} />
         <Route path="project" element={<Gallery />} />
         <Route path="Team" element={<Team />} />

@@ -6,5 +6,16 @@ import Gallery from "./gallery/Gallery";
 import Home from "./home/Home";
 import NotFound from "./notFound/NotFound";
 import Team from "./team/Team";
+import HowItWorksPage from "./howItWorks/HowItWorksPage";
 
-export { About, Contact, Gallery, Home, NotFound, Team, Courses, CourseDetail };
+export {
+  About,
+  Contact,
+  Gallery,
+  Home,
+  NotFound,
+  Team,
+  Courses,
+  CourseDetail,
+  HowItWorksPage,
+};

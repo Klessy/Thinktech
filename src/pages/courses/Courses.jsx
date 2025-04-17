@@ -98,7 +98,7 @@ const Courses = () => {
                             window.scrollTo(0, 0);
                           }}
                         >
-                          Enroll Now
+                          Read More
                         </Link>
                       </div>
                     </div>

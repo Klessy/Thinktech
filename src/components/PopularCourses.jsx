@@ -29,6 +29,7 @@ const PopularCourses = () => {
               techImg_two,
               techImg_three,
               techImg_four,
+              course_link,
             } = courses;
             return (
               <div className="popular__courses-card" key={id}>
@@ -68,7 +69,15 @@ const PopularCourses = () => {
                       <span className="text-xl">{duration}</span>
                     </li>
                   </ul>
-                  <Link to="/">{desc}</Link>
+                  <Link
+                    to={course_link}
+                    className="popular__courses-link"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    {desc}
+                  </Link>
                   <div className="popular__courses-stack">
                     <img
                       src={techImg_one}
@@ -78,6 +87,18 @@ const PopularCourses = () => {
                     />
                     <img
                       src={techImg_two}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <img
+                      src={techImg_three}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <img
+                      src={techImg_four}
                       alt=""
                       loading="lazy"
                       decoding="async"

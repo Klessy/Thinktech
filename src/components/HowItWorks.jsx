@@ -36,7 +36,11 @@ const HowItWorks = () => {
               the courses on any devic, including desktop computers
             </p>
             <div className="">
-              <Button text={"How it Works"} icon={<FaArrowRight />} />
+              <Button
+                text={"How it Works"}
+                icon={<FaArrowRight />}
+                link={"how_it_works"}
+              />
             </div>
           </div>
         </div>

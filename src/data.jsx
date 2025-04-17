@@ -24,6 +24,15 @@ import skillImg_9 from "./assets/logo/mit-1-kids-children-teencoders-coding-scho
 import skillImg_10 from "./assets/logo/arduino-kids-children-teencoders-coding-school-kids-port-harcourt-lagos-abuja-150x100.jpg";
 import htmlImg from "./assets/logo/html.png";
 import cssImg from "./assets/logo/css.png";
+import pythonImg from "./assets/logo/python-transparent.png";
+import powerBI from "./assets/logo/powerbi-transparent.png";
+import excelImg from "./assets/logo/excel-transparent.png";
+import SQLImg from "./assets/logo/SQL-yellow.png";
+import scratchImg from "./assets/logo/scratch-img.png";
+import reactImg from "./assets/logo/react.png";
+import reduxImg from "./assets/logo/redux.png";
+import gitImg from "./assets/logo/git.png";
+import tailwindCss from "./assets/logo/tailwind.svg";
 //Popular Courses Images
 // import ThinktechStudentImg_1 from "./assets/images/thinktech-lady-sitting.jpeg";
 import ThinktechStudentImg_2 from "./assets/images/img2.jpeg";
@@ -228,6 +237,7 @@ const coursesData = [
     techImg_three: "",
     techImg_four: "",
     course_title: "",
+    course_link: "/courses/1",
   },
   {
     id: 2,
@@ -238,10 +248,11 @@ const coursesData = [
     duration: "3 Weeks",
     desc: "Beginner and Advanced  Data Analytics Class",
     feature: "Beginner",
-    techImg_one: htmlImg,
-    techImg_two: cssImg,
-    techImg_three: "",
-    techImg_four: "",
+    techImg_one: excelImg,
+    techImg_two: powerBI,
+    techImg_three: pythonImg,
+    techImg_four: SQLImg,
+    course_link: "/courses/2",
   },
   {
     id: 3,
@@ -250,12 +261,13 @@ const coursesData = [
     authorImg: ThinktechInstructor,
     lessons: "16 Lessons",
     duration: "3 Weeks",
-    desc: "The Complete HTML and CSS Bootcamp",
+    desc: "Story telling with Animation",
     feature: "Beginner",
-    techImg_one: htmlImg,
-    techImg_two: cssImg,
+    techImg_one: scratchImg,
+    techImg_two: skillImg_8,
     techImg_three: "",
     techImg_four: "",
+    course_link: "/courses/3",
   },
   {
     id: 4,
@@ -264,12 +276,13 @@ const coursesData = [
     authorImg: ThinktechInstructor,
     lessons: "16 Lessons",
     duration: "3 Weeks",
-    desc: "The Complete HTML and CSS Bootcamp",
+    desc: "Build Web Apps and Mobile Apps within a Month",
     feature: "Beginner",
-    techImg_one: htmlImg,
-    techImg_two: cssImg,
-    techImg_three: "",
-    techImg_four: "",
+    techImg_one: reactImg,
+    techImg_two: reduxImg,
+    techImg_three: gitImg,
+    techImg_four: tailwindCss,
+    course_link: "/courses/1",
   },
 ];
 
@@ -409,39 +422,48 @@ const projectData = [
 const faqs = [
   {
     id: 1,
-    question: "What do you need to start working on my project?",
-    answer:
-      "It mostly depends on the type of project. But in general, you need a fair idea of what you want, then we can take it from there.",
+    question: "What Age?",
+    answer: "From Ages 5 and above",
   },
   {
     id: 2,
-    question: "How long will my project take to complete?",
-    answer:
-      "This depends on the complexity of the project, your available, and your payment. Once you have this sorted out, I will give you a completion date.",
-  },
-  {
-    id: 5,
-    question: "Is hosting and domain registration inclusive in your pricing?",
-    answer:
-      "No! Hosting and domain is taken care of seperately. You can pay for it or take care of it on your own if you know how to.",
-  },
-  {
-    id: 4,
-    question: "How much do you charge for an average website or app?",
-    answer:
-      "Once again, this depends. But my prices are affordable so you're good.",
+    question: "Requirements",
+    answer: "You will need a laptop and internet access.",
   },
   {
     id: 3,
-    question: "What's your payment plan?",
+    question: "What Laptop Specification do you recommend?",
     answer:
-      "Payment is divided into 3. An initial 30% upfront payment to get me started once all the details of the projec is set, 40% once the project is completed, and 30% once the project is delivered.",
+      "Minimum specifications (OPERATING SYSTEM: Window 8. PROCESSOR: Corei3. RAM: 4GB. HARD DISK: 500GB).",
+  },
+  {
+    id: 4,
+    question: "Certificate",
+    answer:
+      "You will receive a certificate after successfully completing a course.",
+  },
+  {
+    id: 5,
+    question: "Difference between buying a course and attending a class",
+    answer:
+      "The course is a prerecorded tutorial, while the class is a live tutorial.",
   },
   {
     id: 6,
-    question: "What if the project doesn't turn out good?",
+    question: "Difference between a private and a group",
     answer:
-      "You will be a part of the process from the start. You will know how the whole project is going until the end. And I will make sure to give you the best.",
+      "The private class has 1 student to 1 instructor. The group class has maximum 5 students to 1 instructor.",
+  },
+  {
+    id: 7,
+    question: "Difference between coding and robotics",
+    answer:
+      "CODING is giving a computer instruction to perform a specific task. These instructions are communicated using a language that computers can understand, like visual blocks, JavaScript, Python, HTML, and CSS. With coding, kids create apps, games, cartoons, software etc. ROBOTICS allows kids to learn STEM concepts in a hands-on environment. They learn how to program, design, and make their own robots. Kids create robot cars, drones, automated / smart systems etc.",
+  },
+  {
+    id: 8,
+    question: "What if a student misses a class",
+    answer: "Class rescheduling is only available for a private student.",
   },
 ];
 
