@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { FaArrowRight } from "react-icons/fa6";
-import AboutImg from "../assets/img6.png";
 import AboutExpertImg from "../assets/logo/student-2.png";
 import AboutBookImg from "../assets/logo/book-2.png";
 import AboutRewardImg from "../assets/logo/reward-2.png";
-import AboutImgMain from "../assets/about-thinktech-removebg-preview.png";
+import AboutImgMain from "../assets/about-thinktech-removebg-preview-compressed.png";
 
 import "./styles/aboutus.css";
 const AboutUs = () => {
@@ -18,7 +17,12 @@ const AboutUs = () => {
             <img src={AboutImgMain} alt="" loading="lazy" decoding="async" />
           </div>
           <div className="about__img-two">
-            <img src={AboutImg} alt="" loading="lazy" decoding="async" />
+            <img
+              src="https://res.cloudinary.com/dciua0vmb/image/upload/v1745259258/img6-compressed_jzkoib.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
             <div className="circle-img"></div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import { FaPlus } from "react-icons/fa";
 import Button from "./Button";
 import { teamPageData } from "../data";
 // import DataInstructor from "../assets/images/man-medium.jpg";
-import DataInstructor from "../assets/images/mr-george.jpeg";
 import Designer from "../assets/images/Team-12-bg-removed.PNG";
 import SoftwareDeveloper from "../assets/images/team-2-filter-bg-removed.jpg";
 import ForexProfessional from "../assets/images/team-3-bg-removed.jpeg";

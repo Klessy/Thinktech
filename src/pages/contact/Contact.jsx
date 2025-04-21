@@ -231,7 +231,7 @@ const Contact = () => {
               <p className="err-contact">{errors.message?.message}</p>
             </div>
             <div className="form-btn">
-              <button type="submit">Make An Appointment</button>
+              <button type="submit">SCHEDULE A CLASS TODAY</button>
             </div>
           </form>
         </div>

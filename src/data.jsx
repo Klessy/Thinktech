@@ -39,21 +39,21 @@ import ThinktechStudentImg_2 from "./assets/images/img2.jpeg";
 import ThinktechStudentImg_3 from "./assets/images/thinktech-mobile-dev.jpeg";
 import ThinktechStudentImg_4 from "./assets/images/img6.jpeg";
 import ThinktechStudentImg_5 from "./assets/images/grow-with-thinktech.jpeg";
-import ThinktechStudentImg_6 from "./assets/images/view-3d-man-holding-laptop.jpg";
-import ThinktechStudentImg_7 from "./assets/images/view-3d-man-using-laptop.jpg";
-import ThinktechStudentImg_8 from "./assets/images/3d-portrait-high-school-teenager.jpg";
-import ThinktechStudentImg_9 from "./assets/images/think-lady.jpg";
+import ThinktechStudentImg_6 from "./assets/images/view-3d-man-holding-laptop-compressed.jpg";
+import ThinktechStudentImg_7 from "./assets/images/view-3d-man-using-laptop-compressed.jpg";
+import ThinktechStudentImg_8 from "./assets/images/3d-portrait-high-school-teenager-compressed.jpg";
+import ThinktechStudentImg_9 from "./assets/images/think-lady-compressed.jpg";
 import ThinktechInstructor from "./assets/logo/working-emoji.png";
 //Project Images
 import Project_1 from "./assets/projects/easybank-desktop-preview.jpg";
 import Project_2 from "./assets/projects/flyo-desktop-preview.jpg";
-import Project_3 from "./assets/projects/thinktech-movie-search-app.png";
-import Project_4 from "./assets/projects/thinktech-ecommerce-app.png";
+import Project_3 from "./assets/projects/thinktech-movie-search-app-compressed.png";
+import Project_4 from "./assets/projects/thinktech-ecommerce-app-compressed.png";
 import Project_5 from "./assets/projects/thinktech-flappybird.png";
 
 //About Us
-import AboutSlide_1 from "./assets/images/cross-sitting-to-learn.png";
-import AboutSlide_2 from "./assets/img6.png";
+import AboutSlide_1 from "./assets/images/cross-sitting-to-learn-compressed.png";
+import AboutSlide_2 from "./assets/thinktech-study.jpg";
 
 //What we Offer images
 import Shape_1 from "./assets/logo/offer-icon-01-2.png";
@@ -256,7 +256,8 @@ const coursesData = [
   },
   {
     id: 3,
-    img: "https://i.postimg.cc/vT7WJS2K/view-3d-man-holding-laptop.jpg",
+    // img: "https://i.postimg.cc/vT7WJS2K/view-3d-man-holding-laptop.jpg",
+    img: "https://res.cloudinary.com/dciua0vmb/image/upload/v1745259505/view-3d-man-holding-laptop-compressed_lm6oiv.jpg",
     author: "Precious Eruteya",
     authorImg: ThinktechInstructor,
     lessons: "16 Lessons",
@@ -291,10 +292,14 @@ const projectData = [
     id: 1,
     category: "Web Development",
     image: Project_1,
-    imgBox: Project_3,
+    imgBox:
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745262545/thinktech-movie-search-app-compressed_wy6s99.png",
     title: "Movie Gallery App",
     desc: " This is an Artificial Intelligence template with state of the art design",
     demo: "https://thinktech-cinemate.netlify.app/",
+    desc_2:
+      " A Landing Page with an Asthetic Design inspired from Frontend Mentor Challenge",
+    demo_2: "https://thinktech-easybank.netlify.app/",
     tech1: "React",
     tech2: "SCSS",
     scrollY: -74,
@@ -309,6 +314,9 @@ const projectData = [
     title: "Restuarant Template Good User Experience Demo",
     desc: "Responsive Restuarant Interface where users can order food from the convenience of their homes",
     demo: "https://thinktech-restuarant-temp.netlify.app",
+    desc_2:
+      "Responsive Restuarant Interface where users can order food from the convenience of their homes",
+    demo_2: "https://thinktech-restuarant-temp.netlify.app",
     tech1: "React",
     tech2: "SCSS",
     scrollY: -74,
@@ -323,6 +331,9 @@ const projectData = [
     title: "Video App Implemented with a Search Function",
     desc: "Tried of static content?, Want a graphic illustration? Welcome to my video app where users can search for video context using RestApi and Material UI",
     demo: "https://eloquent-quokka-0074eb.netlify.app",
+    desc_2:
+      "Tried of static content?, Want a graphic illustration? Welcome to my video app where users can search for video context using RestApi and Material UI",
+    demo_2: "https://eloquent-quokka-0074eb.netlify.app",
     tech1: "React",
     tech2: "SCSS",
     scrollY: -74,
@@ -337,6 +348,9 @@ const projectData = [
     title: "Flappy Bird Animation",
     desc: "Keep the body fit. Welcome to my exercise app where users can search for any exercise. Graphic illustration and description of exercise is provided using Giff",
     demo: "https://thinktech-flappybird.netlify.app/",
+    desc_2:
+      "Keep the body fit. Welcome to my exercise app where users can search for any exercise. Graphic illustration and description of exercise is provided using Giff",
+    demo_2: "https://thinktech-flappybird.netlify.app/",
     tech1: "React",
     tech2: "SCSS",
     scrollY: -74,
@@ -351,6 +365,9 @@ const projectData = [
     title: "Restuarant Bootstrap Demo",
     desc: "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure earum  ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
     demo: "https://precioustutorials.com",
+    desc_2:
+      "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure earum  ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
+    demo_2: "https://precioustutorials.com",
     tech1: "React",
     tech2: "SCSS",
     scrollY: -74,
@@ -365,6 +382,9 @@ const projectData = [
     title: "Projecct Title One (UIUX)",
     desc: " architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
     demo: "https://precioustutorials.com",
+    desc_2:
+      " architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
+    demo_2: "https://precioustutorials.com",
     github: "https://github.com/klessy",
     tech1: "React",
     tech2: "SCSS",
@@ -376,7 +396,8 @@ const projectData = [
     id: 7,
     category: "Web Development",
     image: Project_2,
-    imgBox: Project_4,
+    imgBox:
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745263195/thinktech-images/thinktech-ecommerce-app-compressed_az6zoj.png",
     title: "WebStore",
     desc: "An Ecommerce Template made and designed by think tech",
     demo: "https://thinktech-codebook.netlify.app/",
@@ -391,7 +412,8 @@ const projectData = [
     id: 8,
     category: "Web Development",
     image: Project_2,
-    imgBox: Project_4,
+    imgBox:
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745263195/thinktech-images/thinktech-ecommerce-app-compressed_az6zoj.png",
     title: "Projecct Title One (UIUX)",
     desc: "An Ecommerce Template made and designed by think tech",
     demo: "https://thinktech-ecom-template.netlify.app",
@@ -405,11 +427,12 @@ const projectData = [
   {
     id: 9,
     category: "Web Development",
-    image: Project_2,
-    imgBox: Project_4,
-    title: "Projecct Title One (UIUX)",
-    desc: "An Ecommerce Template made and designed by think tech",
-    demo: "https://thinktech-ecom-template.netlify.app",
+    image: Project_1,
+    imgBox:
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745263195/thinktech-images/thinktech-ecommerce-app-compressed_az6zoj.png",
+    title: "Easybank Landing Page(UI/UX)",
+    desc: "A Landing Page with an Asthetic Design inspired from Frontend Mentor Challenge",
+    demo: "https://thinktech-easybank.netlify.app",
     github: "https://github.com/klessy",
     tech1: "React",
     tech2: "SCSS",
