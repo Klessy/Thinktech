@@ -282,6 +282,10 @@
   .whyus__wrapper {
     grid-template-columns: 1fr;
   }
+
+  .who__we__are-p p {
+    font-size: 1.6rem;
+  }
 }
 
 /* ================================== 
