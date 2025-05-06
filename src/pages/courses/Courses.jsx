@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { useTitle } from "../../hooks/useTitle";
-import { BreadCrumb, Button } from "../../components";
+import { BreadCrumb, Button, SEO } from "../../components";
 import { CgNotes } from "react-icons/cg";
 import { coursePageData } from "../../data";
 import Course_1 from "../../assets/images/course-1.webp";
@@ -8,10 +8,15 @@ import Course_1 from "../../assets/images/course-1.webp";
 import "./courses.css";
 
 const Courses = () => {
-  useTitle("Courses");
+  // useTitle("Courses");
   const { params } = useParams();
   return (
     <>
+      <SEO
+        title="Courses | Thinktech Academy"
+        description="Explore digital skills: Web Dev, Mobile Dev, Game Dev & Graphic Design."
+        url="https://thinktech.com.ng/courses"
+      />
       <BreadCrumb title={"Courses"} path={"Course"} />
       <section className="courses__section">
         <div className="container courses__container">
@@ -32,7 +37,11 @@ const Courses = () => {
                 <div to={"/courses/details"} className="course__card">
                   <div className="course__card-inner">
                     <div className="course__card-img">
-                      <img src={course_img} alt="" className="course-thumb" />
+                      <img
+                        src={course_img}
+                        alt={`${course_title} With Thinktech`}
+                        className="course-thumb"
+                      />
                       <div className="status-group">
                         <span className="status-01">{course_title}</span>
                       </div>
@@ -75,8 +84,11 @@ const Courses = () => {
                       <p>{course_details}</p>
                       <div className="hover-bottom-content">
                         <div className="author-meta">
-                          <img src={Course_1} alt="" />
-                          <span className="author__title">Precious</span>
+                          <img
+                            src={authorImg}
+                            alt={`Thinktech Instructors - ${author_title}`}
+                          />
+                          <span className="author__title">{author_title}</span>
                         </div>
                         <ul className="edu-meta">
                           <li className="course_flex">
@@ -98,7 +110,7 @@ const Courses = () => {
                             window.scrollTo(0, 0);
                           }}
                         >
-                          Read More
+                          Learn More
                         </Link>
                       </div>
                     </div>

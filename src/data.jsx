@@ -45,11 +45,14 @@ import ThinktechStudentImg_8 from "./assets/images/3d-portrait-high-school-teena
 import ThinktechStudentImg_9 from "./assets/images/think-lady-compressed.jpg";
 import ThinktechInstructor from "./assets/logo/working-emoji.png";
 //Project Images
-import Project_1 from "./assets/projects/easybank-desktop-preview.jpg";
+import Project_1 from "./assets/projects/my-bg.jpg";
 import Project_2 from "./assets/projects/flyo-desktop-preview.jpg";
 import Project_3 from "./assets/projects/thinktech-movie-search-app-compressed.png";
-import Project_4 from "./assets/projects/thinktech-ecommerce-app-compressed.png";
+import Project_4 from "./assets/projects/thinteck-ecom-temp2.jpg";
 import Project_5 from "./assets/projects/thinktech-flappybird.png";
+import Project_6 from "./assets/projects/easybank-desktop-preview.jpg";
+import Project_7 from "./assets/projects/thinkteck-racing-car.jpg";
+import Project_8 from "./assets/projects/thinktech-forex.jpg";
 
 //About Us
 import AboutSlide_1 from "./assets/images/cross-sitting-to-learn-compressed.png";
@@ -293,49 +296,43 @@ const projectData = [
     category: "Web Development",
     image: Project_1,
     imgBox:
-      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745262545/thinktech-movie-search-app-compressed_wy6s99.png",
-    title: "Movie Gallery App",
-    desc: " This is an Artificial Intelligence template with state of the art design",
-    demo: "https://thinktech-cinemate.netlify.app/",
-    desc_2:
-      " A Landing Page with an Asthetic Design inspired from Frontend Mentor Challenge",
-    demo_2: "https://thinktech-easybank.netlify.app/",
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745263195/thinktech-images/thinktech-ecommerce-app-compressed_az6zoj.png",
+    title: "Book Store",
+    desc: " A simple book store where users can Search, Purchase their favorite courses, with Users Login and Registration page",
+    demo: "https://thinktech-codebook.netlify.app/",
     tech1: "React",
-    tech2: "SCSS",
+    tech2: "Flowbite",
     scrollY: -74,
     cName: "",
     icon: "🪙",
   },
   {
     id: 2,
-    category: "Data Analysis",
-    image: Project_2,
-    imgBox: Project_3,
-    title: "Restuarant Template Good User Experience Demo",
-    desc: "Responsive Restuarant Interface where users can order food from the convenience of their homes",
-    demo: "https://thinktech-restuarant-temp.netlify.app",
-    desc_2:
-      "Responsive Restuarant Interface where users can order food from the convenience of their homes",
-    demo_2: "https://thinktech-restuarant-temp.netlify.app",
-    tech1: "React",
-    tech2: "SCSS",
+    category: "Web Development",
+    image: Project_4,
+    imgBox:
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745416574/thinktech-images/Thinktech-ecom-template-design-compressed_rzqrqv.png",
+    title: "WebStore",
+    desc: "A Responsive Ecommerce Template made and designed by thinktech",
+    demo: "https://thinktech-ecom-template.netlify.app/",
+    tech1: "HTML",
+    tech2: "CSS",
+    tech3: "javaScript",
     scrollY: -74,
     cName: "reversed-proj",
     icon: "🏋️",
   },
   {
     id: 3,
-    category: "Forex",
-    image: Project_2,
-    imgBox: Project_3,
-    title: "Video App Implemented with a Search Function",
-    desc: "Tried of static content?, Want a graphic illustration? Welcome to my video app where users can search for video context using RestApi and Material UI",
-    demo: "https://eloquent-quokka-0074eb.netlify.app",
-    desc_2:
-      "Tried of static content?, Want a graphic illustration? Welcome to my video app where users can search for video context using RestApi and Material UI",
-    demo_2: "https://eloquent-quokka-0074eb.netlify.app",
-    tech1: "React",
-    tech2: "SCSS",
+    category: "Web Development",
+    image: Project_6,
+    imgBox:
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745416962/thinktech-images/thinktech-easybank-compressed_s9zyig.png",
+    title: "Easybank Landing Page (UI/UX)",
+    desc: "A Landing Page with an Asthetic Design inspired from Frontend Mentor Challenge",
+    demo: "https://thinktech-easybank.netlify.app",
+    tech1: "HTML",
+    tech2: "CSS",
     scrollY: -74,
     cName: "",
     icon: "🛒",
@@ -343,15 +340,13 @@ const projectData = [
   {
     id: 4,
     category: "Animation & Game Dev",
-    image: Project_1,
-    imgBox: Project_5,
-    title: "Flappy Bird Animation",
-    desc: "Keep the body fit. Welcome to my exercise app where users can search for any exercise. Graphic illustration and description of exercise is provided using Giff",
-    demo: "https://thinktech-flappybird.netlify.app/",
-    desc_2:
-      "Keep the body fit. Welcome to my exercise app where users can search for any exercise. Graphic illustration and description of exercise is provided using Giff",
-    demo_2: "https://thinktech-flappybird.netlify.app/",
-    tech1: "React",
+    image: Project_7,
+    imgBox:
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745432307/thinktech-images/car-race-scratch_xwqea6.jpg",
+    title: "Car Racing Animation",
+    desc: "An Award winning Project a Simple Demonstration of Motion Programming with Scratch",
+    demo: "https://thinktech-racingcar.netlify.app/",
+    tech1: "Scratch",
     tech2: "SCSS",
     scrollY: -74,
     cName: "reversed-proj",
@@ -359,17 +354,15 @@ const projectData = [
   },
   {
     id: 5,
-    category: "Mobile Development",
-    image: Project_1,
-    imgBox: Project_3,
-    title: "Restuarant Bootstrap Demo",
-    desc: "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure earum  ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
+    category: "Forex",
+    image: Project_8,
+    imgBox:
+      "https://res.cloudinary.com/dciua0vmb/image/upload/v1745435466/thinktech-images/thinktech-forex-bg_hdfzm9.jpg",
+    title: "Professional Trading Setup",
+    desc: " Personal Trading System that gives Frequent trading Signals and Guide on how to become a successful  Trader",
     demo: "https://precioustutorials.com",
-    desc_2:
-      "Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure earum  ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
-    demo_2: "https://precioustutorials.com",
-    tech1: "React",
-    tech2: "SCSS",
+    tech1: "MT4",
+    tech2: "Indicators",
     scrollY: -74,
     cName: "",
     icon: "🪙",
@@ -382,12 +375,9 @@ const projectData = [
     title: "Projecct Title One (UIUX)",
     desc: " architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
     demo: "https://precioustutorials.com",
-    desc_2:
-      " architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!",
-    demo_2: "https://precioustutorials.com",
     github: "https://github.com/klessy",
-    tech1: "React",
-    tech2: "SCSS",
+    tech1: "Excel",
+    tech2: "Power Query",
     scrollY: -74,
     cName: "reversed-proj",
     icon: "🪙",
@@ -399,8 +389,8 @@ const projectData = [
     imgBox:
       "https://res.cloudinary.com/dciua0vmb/image/upload/v1745263195/thinktech-images/thinktech-ecommerce-app-compressed_az6zoj.png",
     title: "WebStore",
-    desc: "An Ecommerce Template made and designed by think tech",
-    demo: "https://thinktech-codebook.netlify.app/",
+    desc: "An Ecommerce Template made and designed by thinktech",
+    demo: "https://thinktech-cinemate.netlify.app/",
     github: "https://github.com/klessy",
     tech1: "React",
     tech2: "SCSS",
@@ -426,7 +416,7 @@ const projectData = [
   },
   {
     id: 9,
-    category: "Web Development",
+    category: "Mobile Development",
     image: Project_1,
     imgBox:
       "https://res.cloudinary.com/dciua0vmb/image/upload/v1745263195/thinktech-images/thinktech-ecommerce-app-compressed_az6zoj.png",
@@ -559,13 +549,13 @@ const coursePageData = [
     id: 1,
     course_img: Course_1,
     course_title: "Full Stack",
-    authorImg: Course_1,
+    authorImg: SoftwareDeveloper,
     author_title: "Precious Eruteya",
     course_desc: "The Complete Guide to Web Development",
     lessons: 17,
     price: "75",
     course_details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",
+      "During this Course we explore how to make and materializing ideas into Web apps. This course introduces you to the basics of programming with HTML, CSS and javaScript.",
     overview: {
       course_complete_desc:
         "During this Course we explore how to make and materializing ideas into Web apps. This course introduces you to the basics of programming with HTML, CSS and javaScript. This course is Structured so that it engages participants in building Web applications. This course is solely project based",
@@ -605,7 +595,7 @@ const coursePageData = [
     id: 2,
     course_img: Course_3,
     course_title: "Data Analysis",
-    authorImg: Course_1,
+    authorImg: DataInstructor2,
     author_title: "George",
     course_desc: "The Complete Guide to Data Analysis",
     lessons: 17,
@@ -657,7 +647,7 @@ const coursePageData = [
     lessons: 17,
     price: "75",
     course_details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",
+      "This project is structured so that it engages Participants with making complex Animations and Games such as Flappy Bird and Action Games",
 
     overview: {
       course_complete_desc:
@@ -698,13 +688,13 @@ const coursePageData = [
     id: 4,
     course_img: Course_2,
     course_title: "Forex",
-    authorImg: Course_1,
+    authorImg: ForexProfessional,
     author_title: "Richmond",
     course_desc: "Master Forex Trading in One Go!",
     lessons: 17,
     price: "75",
     course_details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",
+      "The Goal of this Course is to Guide you on how to build your Personal Trading System that gives Frequent trading Signals and also guide you on how to become a successful Prop Firm Trader",
     overview: {
       course_complete_desc:
         "The Goal of this Course is to Guide you on how to build your Personal Trading System that gives Frequent trading Signals and also guide you on how to become a successful Prop Firm Trader",
@@ -792,7 +782,7 @@ const coursePageData = [
     course_title: "Mobile Development",
     authorImg: Course_1,
     author_title: "Precious Eruteya",
-    course_desc: "The Complete Guide to Building Mobile Apps",
+    course_desc: "Build Your First Mobile App",
     lessons: 17,
     price: "75",
     course_details:

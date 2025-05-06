@@ -21,7 +21,7 @@ const Footer = () => {
               <a href="#">
                 <i className="far fa-envelope"></i>
               </a>
-              thinktech@gmail.com
+              thinktechcenter@gmail.com
             </li>
             <li>
               <a href="#">

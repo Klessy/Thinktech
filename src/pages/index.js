@@ -7,6 +7,7 @@ import Home from "./home/Home";
 import NotFound from "./notFound/NotFound";
 import Team from "./team/Team";
 import HowItWorksPage from "./howItWorks/HowItWorksPage";
+import Payment from "./enroll/Payment";
 
 export {
   About,
@@ -18,4 +19,5 @@ export {
   Courses,
   CourseDetail,
   HowItWorksPage,
+  Payment,
 };

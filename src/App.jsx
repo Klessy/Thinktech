@@ -10,6 +10,7 @@ import {
   Team,
   CourseDetail,
   HowItWorksPage,
+  Payment,
 } from "./pages";
 import { Navbar, Footer, ScrollToTop } from "./components";
 
@@ -21,6 +22,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="enroll" element={<Payment />} />
         <Route path="courses" element={<Courses />} />
         <Route path="/how_it_works" element={<HowItWorksPage />} />
         <Route path="courses/:courseId" element={<CourseDetail />} />

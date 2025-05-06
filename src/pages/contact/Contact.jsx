@@ -6,9 +6,10 @@ import { useForm } from "react-hook-form";
 
 import "./contact.css";
 import { useTitle } from "../../hooks/useTitle";
+import { SEO } from "../../components";
 
 const Contact = () => {
-  useTitle("Contact Us");
+  // useTitle("Contact Us");
   const formSub = useRef();
 
   const sendEmail = (e) => {
@@ -48,6 +49,11 @@ const Contact = () => {
 
   return (
     <section className="contact__section" id="contact" data-aos="fade-up">
+      <SEO
+        title="Contact Us | Thinktech Academy"
+        description="Reach out to Thinktech for tech training, web development, and more."
+        url="https://thinktech.com.ng/contact"
+      />
       <BreadCrumb title={"Contact ThinkTech"} path={"Contact"} />
       <div className="container">
         {/* contact */}

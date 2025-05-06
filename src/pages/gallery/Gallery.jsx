@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Pagination from "./Pagination";
 import Search from "./Search";
-import { BreadCrumb } from "../../components";
+import { BreadCrumb, SEO } from "../../components";
 import { projectData } from "../../data";
 import ProBoxes from "./ProBoxes";
 
@@ -10,7 +10,7 @@ import SearchBoxes from "./SearchBoxes";
 import { useTitle } from "../../hooks/useTitle";
 
 const Gallery = () => {
-  useTitle("Projects");
+  // useTitle("Projects");
   const [projects, setProjects] = useState(projectData);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(2);
@@ -33,41 +33,48 @@ const Gallery = () => {
     );
 
   return (
-    <section className="projectPage__section">
-      <BreadCrumb
-        title={"Build Industry Standard Projects as you Learn"}
-        path={"Project"}
+    <>
+      <SEO
+        title="Project | Thinktech Academy"
+        description=" Build Industry Standard Projects as you Learn"
+        url="https://thinktech.com.ng/project"
       />
-      <article className="projectPage-wrapper container">
-        <div className="projectPage__con ">
-          {search ? (
-            <SearchBoxes onFilterData={filterData} />
-          ) : (
-            <ProBoxes projects={currentPosts} />
-          )}
-
-          <div className="">
-            {search ? null : (
-              <Pagination
-                totalPosts={projects.length}
-                postsPerPage={postsPerPage}
-                setCurrentPage={setCurrentPage}
-                currentPage={currentPage}
-              />
+      <section className="projectPage__section">
+        <BreadCrumb
+          title={"Build Industry Standard Projects as you Learn"}
+          path={"Project"}
+        />
+        <article className="projectPage-wrapper container">
+          <div className="projectPage__con ">
+            {search ? (
+              <SearchBoxes onFilterData={filterData} />
+            ) : (
+              <ProBoxes projects={currentPosts} />
             )}
+
+            <div className="">
+              {search ? null : (
+                <Pagination
+                  totalPosts={projects.length}
+                  postsPerPage={postsPerPage}
+                  setCurrentPage={setCurrentPage}
+                  currentPage={currentPage}
+                />
+              )}
+            </div>
           </div>
-        </div>
-        <div className="search-bar">
-          <Search
-            projects={projects}
-            search={search}
-            setSearch={setSearch}
-            // filteredData={filteredData}
-            // setFilteredData={setFilteredData}
-          />
-        </div>
-      </article>
-    </section>
+          <div className="search-bar">
+            <Search
+              projects={projects}
+              search={search}
+              setSearch={setSearch}
+              // filteredData={filteredData}
+              // setFilteredData={setFilteredData}
+            />
+          </div>
+        </article>
+      </section>
+    </>
   );
 };
 

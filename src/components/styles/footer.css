@@ -20,6 +20,10 @@
   color: var(--white);
 }
 
+.footer__address li {
+  color: var(--white);
+}
+
 .footer__address li a {
   font-size: 18px;
 }

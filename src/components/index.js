@@ -12,6 +12,7 @@ import Projects from "./project/Projects";
 import ScrollToTop from "./ScrollToTop";
 import SkillSlider from "./SkillSlider";
 import Services from "./Services";
+import SEO from "./SEO";
 import Team from "./Team";
 import Testimonial from "./Testimonial";
 
@@ -32,4 +33,5 @@ export {
   Team,
   Testimonial,
   ScrollToTop,
+  SEO,
 };

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { BreadCrumb } from "../../../components";
+import { BreadCrumb, SEO } from "../../../components";
 import CourseImg from "../../../assets/images/course-1.webp";
 import CourseContent from "./CourseContent";
 import CourseDetailSidebar from "./CourseDetailSidebar";
@@ -11,9 +11,14 @@ import { useTitle } from "../../../hooks/useTitle";
 const CourseDetail = () => {
   const { courseId } = useParams();
   const course = coursePageData.find((item) => item.id == courseId);
-  useTitle(course.course_title);
+  // useTitle(course.course_title);
   return (
     <>
+      <SEO
+        title={`${course.course_title} | Thinktech Academy`}
+        description={`${course.course_desc} | Thinktech Academy`}
+        url={`https://thinktech.com.ng/courses/${courseId}`}
+      />
       <BreadCrumb title={course.course_title} path={"CourseDetail"} />
       <section className="course__detail-section">
         <div className="course__detail-img">

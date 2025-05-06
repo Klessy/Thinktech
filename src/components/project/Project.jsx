@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Button";
 const Project = ({ project }) => {
   return (
@@ -16,7 +17,9 @@ const Project = ({ project }) => {
           <p>{project.desc}</p>
         </div>
         <div className="project__btn-link">
-          <Button text={"View demo"} />
+          <a href={project.demo} className="btn_main" target="_blank">
+            View demo
+          </a>
         </div>
       </div>
     </section>
