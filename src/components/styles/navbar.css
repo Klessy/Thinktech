@@ -5,7 +5,7 @@ nav {
 .nav__container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 1.5rem 3rem;
   width: 100%;
   position: relative;
@@ -43,7 +43,7 @@ nav {
 }
 
 .active-nav {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   background: rgb(24, 59, 231);
   color: var(--white);
@@ -56,7 +56,7 @@ nav {
 a {
   /* color: #7a7a7a; */
   color: #1a1b1e;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .navbar__img h1 {
