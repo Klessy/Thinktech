@@ -228,6 +228,19 @@
   border: none;
 }
 
+.course__stacks {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  gap: 1rem;
+  /* margin-top: 20px; */
+}
+
+.course__stack img {
+  /* width: 100%; */
+  object-fit: cover;
+}
+
 /*=========================== HOVER COURSES =========================== */
 .course__card:hover .card__hover-action {
   opacity: 1;

@@ -27,6 +27,10 @@ import cssImg from "./assets/logo/css.png";
 import pythonImg from "./assets/logo/python-transparent.png";
 import powerBI from "./assets/logo/powerbi-transparent.png";
 import excelImg from "./assets/logo/excel-transparent.png";
+import wordImg from "./assets/logo/Word.png";
+import PowerPointImg from "./assets/logo/MS-powerpoint.png";
+import MsAccessImg from "./assets/logo/MS-Access.png";
+import MetaImg from "./assets/logo/metatrader.jpeg";
 import SQLImg from "./assets/logo/SQl-yellow.png";
 import scratchImg from "./assets/logo/scratch-img.png";
 import reactImg from "./assets/logo/react.png";
@@ -553,6 +557,10 @@ const coursePageData = [
     author_title: "Precious Eruteya",
     course_desc: "The Complete Guide to Web Development",
     lessons: 17,
+    techImg_one: reactImg,
+    techImg_two: reduxImg,
+    techImg_three: gitImg,
+    techImg_four: tailwindCss,
     price: "75",
     course_details:
       "During this Course we explore how to make and materializing ideas into Web apps. This course introduces you to the basics of programming with HTML, CSS and javaScript.",
@@ -599,21 +607,25 @@ const coursePageData = [
     author_title: "George",
     course_desc: "The Complete Guide to Data Analysis",
     lessons: 17,
+    techImg_one: excelImg,
+    techImg_two: powerBI,
+    techImg_three: pythonImg,
+    techImg_four: SQLImg,
     price: "75",
     course_details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",
+      "This data analysis course is an introduction to the process of extracting meaningful insights from data to support decision-making. ",
     overview: {
       course_complete_desc:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, a maxime! Doloremque a delectus molestias, consequatur quisquam sunt fuga, iusto quaerat mollitia ut nobis ipsum eius, laudantium adipisci ab quas? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique itaque quam explicabo illum perspiciatis, quis alias, tempora ex dolor, molestias ratione voluptatibus dolorum! Sint autem dolores optio earum modi officiis?",
+        "This data analysis course is an introduction to the process of extracting meaningful insights from data to support decision-making. It typically covers topics like data collection, cleaning, analysis, visualization, and interpretation, equipping students with the skills to use data effectively.",
       you_will_learn: [
-        "Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor \n Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor",
+        "Data entry and formatting\n Data cleaning (remove duplicates, handle missing values)\n Dashboard Creation (Bike Sales Analysis and Dashboard). \n Filtering data with conditions \n Data Analysis with Power BI (Publishing and sharing dashboards) \n Basic data manipulation with pandas \n Build a Project on Movie Recommendation System that suggests movies based on user preferences (Data Visualization and Exploration) ",
         "",
       ],
       certification:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sint corrupti reiciendis quia praesentium doloremque. Itaque voluptate quam voluptatibus reiciendis quisquam quasi, veniam id autem cumque, quia perferendis minima ex.",
     },
     introduction: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa? \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, culpa?",
+      "What is data analysis? \n Types of data and data collection \n Basic data analysis workflow \n	Importance of data analysis and applications of data analysis \n Introduction to Excel \n Data entry and formatting \n Sorting and filtering data \n LOOKUP Functions using VLOOKUP and XLOOKUP \n Data cleaning (remove duplicates, handle missing values) \n Pivot tables, charts and using slicers \n Power Query \n Creating Dashboard Setting up the SQL Environment (If not already set up) \n Introduction to relational databases (Rational and Non-Rational databases) \n Different types of SQL Commands (DDL, DML, DQL) \n Basic query structure: SELECT, FROM, WHERE, ETC \n Filtering data with conditions \n Comparison operators (=, >, <, > =, <=, !=) \n Logical operators (AND, OR, NOT) \n Sorting data with ORDER BY Clause, ascending (ASC) order, descending (DESC) order \n Grouping data with GROUP BY Clause \n Aggregate Functions: Such a COUNT() , SUM() , AVG() , MIN() , MAX() Python setup (Anaconda, Jupyter Notebook) \n Basic syntax and data types \n Using pandas: reading CSVs, data frames \n Basic data manipulation with pandas \n Simple visualizations with matplotlib and seaborn",
     ],
     instructor: {
       instructorImg: DataInstructorWhiteImg,
@@ -645,6 +657,10 @@ const coursePageData = [
     author_title: "Paul",
     course_desc: "Programming with Scratch Learn 3D Animation",
     lessons: 17,
+    techImg_one: scratchImg,
+    techImg_two: skillImg_8,
+    techImg_three: "",
+    techImg_four: "",
     price: "75",
     course_details:
       "This project is structured so that it engages Participants with making complex Animations and Games such as Flappy Bird and Action Games",
@@ -692,6 +708,10 @@ const coursePageData = [
     author_title: "Richmond",
     course_desc: "Master Forex Trading in One Go!",
     lessons: 17,
+    techImg_one: MetaImg,
+    techImg_two: "",
+    techImg_three: "",
+    techImg_four: "",
     price: "75",
     course_details:
       "The Goal of this Course is to Guide you on how to build your Personal Trading System that gives Frequent trading Signals and also guide you on how to become a successful Prop Firm Trader",
@@ -738,6 +758,10 @@ const coursePageData = [
     author_title: "Precious Eruteya",
     course_desc: "Guide to Mastering MS-Packages",
     lessons: 17,
+    techImg_one: wordImg,
+    techImg_two: excelImg,
+    techImg_three: PowerPointImg,
+    techImg_four: MsAccessImg,
     price: "75",
     course_details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",
@@ -784,6 +808,10 @@ const coursePageData = [
     author_title: "Precious Eruteya",
     course_desc: "Build Your First Mobile App",
     lessons: 17,
+    techImg_one: reactImg,
+    techImg_two: cssImg,
+    techImg_three: "",
+    techImg_four: "",
     price: "75",
     course_details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas voluptatibus nemo vitae voluptate aspernatur dolores repudiandae, doloribus, non ea iure. Accusamus repudiandae perspiciatis quis",

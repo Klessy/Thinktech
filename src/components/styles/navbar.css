@@ -5,7 +5,7 @@ nav {
 .nav__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 1.5rem 3rem;
   width: 100%;
   position: relative;
@@ -19,8 +19,31 @@ nav {
   font-size: 1rem;
 }
 
+.thinktech-img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.thinktech-logo {
+  width: 65px;
+  height: 65px;
+}
+
+.thinktech-img {
+  object-fit: cover;
+}
+
+.company_name {
+  font-size: 3rem;
+  /* text-transform: capitalize; */
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--dark-blue);
+  text-shadow: -2px 1.5px var(--primary);
+}
+
 .active-nav {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   background: rgb(24, 59, 231);
   color: var(--white);
@@ -33,7 +56,7 @@ nav {
 a {
   /* color: #7a7a7a; */
   color: #1a1b1e;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar__img h1 {

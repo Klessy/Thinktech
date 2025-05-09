@@ -28,6 +28,10 @@ const Courses = () => {
               authorImg,
               author_title,
               course_desc,
+              techImg_one,
+              techImg_two,
+              techImg_three,
+              techImg_four,
               lessons,
               price,
               course_details,
@@ -65,8 +69,32 @@ const Courses = () => {
                       </div>
                       <h4 className="course__title">{course_desc}</h4>
                       <div className="card-bottom">
-                        <div className="price__wrapper">
-                          <span className="course-price">${price}</span>
+                        <div className="course__stacks">
+                          {/* <span className="course-price">${price}</span> */}
+                          <img
+                            src={techImg_one}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                          />
+                          <img
+                            src={techImg_two}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                          />
+                          <img
+                            src={techImg_three}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                          />
+                          <img
+                            src={techImg_four}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                          />
                         </div>
                       </div>
                     </div>
