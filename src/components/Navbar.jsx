@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
-import Logo from "../assets/logo/logo.jpg";
+import Logo from "../assets/logo/thinktech.png";
+import ThinktechLogo from "../assets/logo/thinktech-logo.png";
 
 import { navLink } from "../data";
 
@@ -26,6 +27,7 @@ const Navbar = () => {
             className="thinktech-img"
           >
             <img src={Logo} alt="" className="thinktech-logo" />
+            <img src={ThinktechLogo} alt="" className="mobile-logo" />
             <span className="company_name">hinktech</span>
             {/* <h1>ThinkTech</h1> */}
           </Link>

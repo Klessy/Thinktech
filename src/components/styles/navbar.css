@@ -29,6 +29,16 @@ nav {
   height: 65px;
 }
 
+.mobile-logo {
+  width: 65px;
+  height: 65px;
+  display: none;
+}
+
+.mobile-logo img {
+  object-fit: cover;
+}
+
 .thinktech-img {
   object-fit: cover;
 }
@@ -39,7 +49,7 @@ nav {
   font-weight: 700;
   letter-spacing: 2px;
   color: var(--dark-blue);
-  text-shadow: -2px 1.5px var(--primary);
+  text-shadow: -1.5px 1.5px var(--primary);
 }
 
 .active-nav {
@@ -174,5 +184,19 @@ a {
     font-size: 25px;
     border: none;
     background: transparent;
+  }
+
+  .company_name {
+    display: none;
+  }
+
+  .thinktech-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    width: 65px;
+    height: 65px;
+    display: block;
   }
 }
