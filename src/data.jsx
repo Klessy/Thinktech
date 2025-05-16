@@ -37,6 +37,9 @@ import reactImg from "./assets/logo/react.png";
 import reduxImg from "./assets/logo/redux.png";
 import gitImg from "./assets/logo/git.png";
 import tailwindCss from "./assets/logo/tailwind.svg";
+import TrelloImg from "./assets/logo/trello.jpeg";
+import SlackImg from "./assets/logo/slack.png";
+import DocImg from "./assets/logo/google-docs.png";
 //Popular Courses Images
 // import ThinktechStudentImg_1 from "./assets/images/thinktech-lady-sitting.jpeg";
 import ThinktechStudentImg_2 from "./assets/images/img2.jpeg";
@@ -86,6 +89,7 @@ import DataInstructor from "./assets/images/man-medium.jpg";
 import SoftwareDeveloper from "./assets/images/team-2-filter-bg-removed.jpg";
 import ForexProfessional from "./assets/images/team-3-bg-removed.jpeg";
 import DataInstructor2 from "./assets/images/mr-george_processed.jpeg";
+import VRInstructor from "./assets/images/Benedict-VA-instructor.jpeg";
 
 export const navLink = [
   {
@@ -850,6 +854,56 @@ const coursePageData = [
       instructorName: "Mr Precious",
     },
   },
+  {
+    id: 7,
+    course_img: Course_1,
+    course_title: "Virtual Assistance",
+    authorImg: VRInstructor,
+    author_title: "Benedict",
+    course_desc: "Manage tasks efficiently",
+    lessons: 17,
+    techImg_one: TrelloImg,
+    techImg_two: SlackImg,
+    techImg_three: DocImg,
+    techImg_four: "",
+    price: "75",
+    course_details:
+      "This Course covers the essential skills, tools, and strategies needed to offer remote administrative, technical, and creative support to businesses and entrepreneurs.",
+    overview: {
+      course_complete_desc:
+        "This course provides comprehensive training for individuals aspiring to become professional Virtual Assistants (VAs). It covers the essential skills, tools, and strategies needed to offer remote administrative, technical, and creative support to businesses and entrepreneurs. Students will learn about time management, communication, digital tools (e.g., email management, calendar scheduling, social media management, and cloud storage), client relationship management, and the basics of freelancing or starting a VA business. By the end of the course, participants will be able to effectively work remotely, manage tasks efficiently, and market their services to potential clients.",
+      you_will_learn: [
+        "Benefits of working as a VA Overview of industries hiring VAs \n Handling clients and feedback professionally \n Data entry and file management \n Social media account management \n Content calendar creation \n Customer Support and CRM \n Chat support and helpdesk ticketing systems \n Basic invoicing and billing \n Creating a compelling VA portfolio \n Complete a capstone project (e.g., simulate working for a client",
+        "",
+      ],
+      certification:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sint corrupti reiciendis quia praesentium doloremque. Itaque voluptate quam voluptatibus reiciendis quisquam quasi, veniam id autem cumque, quia perferendis minima ex.",
+    },
+    introduction: [
+      "Introduction to Virtual Assistance \n Definition and roles of a Virtual Assistant Types of Virtual Assistants \n Benefits of working as a VA Overview of industries hiring VAs \n Time management and productivity \n Communication and etiquette (email, phone, video calls) \n Organizational skills \n Handling clients and feedback professionally \n Calendar and appointment scheduling \n Email and inbox management \n Data entry and file management \n Travel planning and research \n Google Workspace (Docs, Sheets, Calendar, Gmail) \n Microsoft Office Suite (Word, Excel, Outlook) \n Project management tools (Trello, Asana, ClickUp) \n Communication tools (Zoom, Slack, Skype) \n Scheduling posts (e.g., using Buffer, Hootsuite) \n Basic Canva design for graphics \n Social media account management \n Content calendar creation \n Handling inquiries and complaints \n Using CRM tools (e.g., HubSpot, Zoho) \n Chat support and helpdesk ticketing systems \n Basic invoicing and billing\n Tools like QuickBooks, Wave, PayPal \n Expense tracking \n Module 8: Finding and Working with Clients \n Creating a compelling VA portfolio \n Platforms for VAs (Upwork, Fiverr, Freelancer) \n Writing proposals and pitching Contracts, pricing, and negotiations \n Understanding NDAs \n Handling sensitive information \n Professional integrity in remote work \n Complete a capstone project (e.g., simulate working for a client)",
+    ],
+    instructor: {
+      instructorImg: CourseInstructorImg,
+      instructorRole: "Software Developer",
+      instructorDesc:
+        "Precious is an instructor and developer living in a suburb of Washington, DC. he has been assigned to aspen ecosystems research and has been involved in several special assignments.",
+      whatsapp: "",
+      twitter: "",
+      linkedln: "",
+      fb: "",
+    },
+    courseSidebar: {
+      duration: "4 Weeks",
+      lessons: "12 Lessons",
+      skillLevel: "Beginner",
+      language: "English",
+      quizzes: 4,
+      certificate: "Yes",
+      passPercentage: 80,
+      deadline: "03 March, 2025",
+      instructorName: "Mr Precious",
+    },
+  },
 ];
 
 const courseContent = [
@@ -927,8 +981,8 @@ const teamPageData = [
   {
     id: 2,
     teamImg: SoftwareDeveloper,
-    teamTitle: "Mr George",
-    designation: "Data Analyst",
+    teamTitle: "Mr Eruteya Precious",
+    designation: "Software Developer ",
     btn: <i className="fas fa-times"></i>,
     fb: <i className="fab fa-facebook-f"></i>,
     instagram: <i className="fab fa-instagram"></i>,
@@ -938,8 +992,8 @@ const teamPageData = [
   {
     id: 3,
     teamImg: DataInstructor2,
-    teamTitle: "Mr Eruteya Precious",
-    designation: "Software Developer",
+    teamTitle: "Mr George",
+    designation: "Data Analyst",
     btn: <i className="fas fa-times"></i>,
     fb: <i className="fab fa-facebook-f"></i>,
     instagram: <i className="fab fa-instagram"></i>,
@@ -948,8 +1002,8 @@ const teamPageData = [
   },
   {
     id: 4,
-    teamImg: DataInstructor,
-    teamTitle: "Eruteya Precious",
+    teamImg: VRInstructor,
+    teamTitle: "Benedict",
     designation: "Software Developer",
     fb: <i className="fab fa-facebook-f"></i>,
     instagram: <i className="fab fa-instagram"></i>,
@@ -959,8 +1013,8 @@ const teamPageData = [
   {
     id: 5,
     teamImg: DataInstructor,
-    teamTitle: "Eruteya Precious",
-    designation: "Software Developer",
+    teamTitle: "New Team",
+    designation: "Instructor",
     fb: <i className="fab fa-facebook-f"></i>,
     instagram: <i className="fab fa-instagram"></i>,
     twitter: <i className="fab fa-twitter"></i>,
@@ -969,8 +1023,8 @@ const teamPageData = [
   {
     id: 6,
     teamImg: DataInstructor,
-    teamTitle: "Eruteya Precious",
-    designation: "Software Developer",
+    teamTitle: "New Member",
+    designation: "Instructor",
     fb: <i className="fab fa-facebook-f"></i>,
     instagram: <i className="fab fa-instagram"></i>,
     twitter: <i className="fab fa-twitter"></i>,
