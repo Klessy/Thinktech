@@ -1,33 +1,25 @@
+name: Deploy React App to Truehost cPanel
+
 on:
   push:
     branches: [main]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-          cache: "npm"
+      - name: Install dependencies
+        run: npm install
 
-      - name: Install Dependencies & Build App
-        run: |
-          npm ci
-          npm run build
+      - name: Build React app
+        run: npm run build
 
-      - name: Generate sitemap.xml
-        run: node sitemap-builder.js
-
-      - name: Copy sitemap.xml to dist/
-        run: cp public/sitemap.xml dist/sitemap.xml
-
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy to cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
