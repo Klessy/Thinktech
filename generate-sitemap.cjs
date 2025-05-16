@@ -1,19 +1,23 @@
-(async () => {
-  const fs = require("fs");
-  const path = require("path");
-  const { Sitemap } = require("react-router-sitemap");
+// generate-sitemap.cjs
+const fs = require("fs");
+const path = require("path");
 
-  // Dynamically import your routes (must export default)
+(async () => {
   const module = await import(path.resolve("./src/routes.js"));
   const routes = module.default;
 
-  // Set your actual domain here (no trailing slash)
-  const baseUrl = "https://thinktech.com.ng";
+  const domain = "https://thinktech.com.ng"; // 🔁 Replace with your real domain
 
-  // Create and save sitemap.xml
-  new Sitemap(routes)
-    .build(baseUrl)
-    .save(path.resolve(__dirname, "dist", "sitemap.xml"));
+  const urls = routes
+    .map((route) => `  <url><loc>${domain}${route}</loc></url>`)
+    .join("\n");
 
-  console.log("✅ Sitemap generated at dist/sitemap.xml");
+  const sitemap =
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
+
+  // Write the sitemap to the `dist/` folder so it gets deployed
+  fs.writeFileSync("./dist/sitemap.xml", sitemap);
+
+  console.log("✅ Sitemap generated successfully!");
 })();
