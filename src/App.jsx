@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import routes from "./routes";
 
 import {
   About,
@@ -19,16 +20,16 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="enroll" element={<Payment />} />
-        <Route path="courses" element={<Courses />} />
-        <Route path="/how_it_works" element={<HowItWorksPage />} />
-        <Route path="courses/:courseId" element={<CourseDetail />} />
-        <Route path="project" element={<Gallery />} />
-        <Route path="Team" element={<Team />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Home />} />
+        <Route path={routes.about} element={<About />} />
+        <Route path={routes.contact} element={<Contact />} />
+        <Route path={routes.enroll} element={<Payment />} />
+        <Route path={routes.courses} element={<Courses />} />
+        <Route path={routes.how_it_works} element={<HowItWorksPage />} />
+        <Route path={routes.courseId} element={<CourseDetail />} />
+        <Route path={routes.project} element={<Gallery />} />
+        <Route path={routes.team} element={<Team />} />
+        <Route path={routes.notFound} element={<NotFound />} />
       </Routes>
       <ScrollToTop />
       <Footer />
