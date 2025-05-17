@@ -1,32 +1,30 @@
 const fs = require("fs");
 const path = require("path");
+const { pathToFileURL } = require("url");
 
 (async () => {
-  const module = await import(path.resolve("./src/routes.js"));
-  const routesObject = module.default;
+  const domain = "https://yourdomain.com"; // ✅ Replace with your domain
 
-  const routePaths = Object.values(routesObject).filter(
+  // Convert path to file URL (important fix for Windows)
+  const routesModuleURL = pathToFileURL(path.resolve("./src/routes.js"));
+  const routesModule = await import(routesModuleURL.href);
+  const routeObj = routesModule.default;
+
+  const routes = Object.values(routeObj).filter(
     (route) => !route.includes(":") && route !== "*"
   );
 
-  const domain = "https://yourdomain.com"; // 🔁 Replace with your actual domain
+  const xml =
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    routes
+      .map((route) => `  <url><loc>${domain}${route}</loc></url>`)
+      .join("\n") +
+    `\n</urlset>`;
 
-  const urls = routePaths
-    .map((route) => `  <url><loc>${domain}${route}</loc></url>`)
-    .join("\n");
+  const distPath = path.resolve("dist");
+  if (!fs.existsSync(distPath)) fs.mkdirSync(distPath);
 
-  const sitemap =
-    `<?xml version="1.0" encoding="UTF-8"?>\n` +
-    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
+  fs.writeFileSync(path.join(distPath, "sitemap.xml"), xml);
 
-  // ✅ Ensure dist directory exists
-  const distDir = path.resolve("./dist");
-  if (!fs.existsSync(distDir)) {
-    fs.mkdirSync(distDir);
-  }
-
-  // ✅ Write sitemap
-  fs.writeFileSync(path.join(distDir, "sitemap.xml"), sitemap);
-
-  console.log("✅ Sitemap generated successfully!");
+  console.log("✅ Sitemap generated at dist/sitemap.xml");
 })();
