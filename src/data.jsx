@@ -1032,6 +1032,33 @@ const teamPageData = [
   },
 ];
 
+//location
+const locations = [
+  {
+    slug: "warri",
+    city: "warri",
+    heading: "Tech Skills in Warri",
+    description:
+      "ThinkTech offers hands-on tech skill acquisition programs in Warri, Nigeria, empowering both kids and adults with real-world digital skills.",
+  },
+  {
+    slug: "portharcourt",
+    city: "Port Harcourt",
+    heading: "Tech Skills in Port Harcourt",
+    description:
+      "In Port Harcourt, ThinkTech empowers learners with real-world tech skills — from coding to digital marketing — for all ages.",
+  },
+  {
+    slug: "Sapele",
+    city: "Sapele",
+    heading: "Tech Skills in Sapele",
+    description:
+      "Our Sapele branch offers practical, project-based tech training for kids, teens, and professionals — powered by ThinkTech.",
+  },
+];
+
+export default locations;
+
 export {
   dataSlider,
   serviceData,
@@ -1044,4 +1071,5 @@ export {
   coursePageData,
   courseContent,
   teamPageData,
+  locations,
 };

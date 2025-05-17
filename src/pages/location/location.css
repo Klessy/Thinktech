@@ -1,0 +1,72 @@
+/* Locations style */
+.locations-container {
+  padding: 1.5rem;
+  max-width: 64rem; /* same as max-w-4xl in Tailwind */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.locations-title {
+  font-size: 1.875rem; /* same as text-3xl */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.locations-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.locations-list li {
+  margin-bottom: 0.5rem; /* same as space-y-2 */
+}
+
+.locations-link {
+  color: #2563eb; /* Tailwind's blue-600 */
+  text-decoration: none;
+}
+
+.locations-link:hover {
+  text-decoration: underline;
+}
+
+/* Location Page */
+.location-container {
+  padding: 1.5rem;
+  max-width: 64rem; /* same as Tailwind max-w-4xl */
+  margin: 0 auto;
+}
+
+.not-found {
+  padding: 1.5rem;
+  color: #dc2626; /* Tailwind text-red-600 */
+}
+
+.not-found h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.location-title {
+  font-size: 1.875rem; /* Tailwind text-3xl ≈ 30px */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.location-description {
+  margin-bottom: 1rem;
+}
+
+.location-features {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.enroll-link {
+  margin-top: 1rem;
+  color: #2563eb; /* Tailwind blue-600 */
+  text-decoration: underline;
+}

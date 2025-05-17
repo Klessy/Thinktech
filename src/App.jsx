@@ -12,6 +12,8 @@ import {
   CourseDetail,
   HowItWorksPage,
   Payment,
+  Locations,
+  LocationPage,
 } from "./pages";
 import { Navbar, Footer, ScrollToTop } from "./components";
 
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path={routes.about} element={<About />} />
         <Route path={routes.contact} element={<Contact />} />
+        <Route path={routes.locations} element={<Locations />} />
+        <Route path="/tech-skills/:city" element={<LocationPage />} />
         <Route path={routes.enroll} element={<Payment />} />
         <Route path={routes.courses} element={<Courses />} />
         <Route path={routes.how_it_works} element={<HowItWorksPage />} />
