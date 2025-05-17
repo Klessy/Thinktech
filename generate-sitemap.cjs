@@ -3,7 +3,7 @@ const path = require("path");
 const { pathToFileURL } = require("url");
 
 (async () => {
-  const domain = "https://yourdomain.com"; // ✅ Replace with your domain
+  const domain = "https://thinktech.com.ng"; // ✅ Replace with your domain
 
   // Convert path to file URL (important fix for Windows)
   const routesModuleURL = pathToFileURL(path.resolve("./src/routes.js"));
