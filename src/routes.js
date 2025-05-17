@@ -1,5 +1,5 @@
 const routes = {
-  locations: "/locations",
+  locationDelta: "/tech-skills-delta",
   home: "/",
   about: "/about",
   contact: "/contact",

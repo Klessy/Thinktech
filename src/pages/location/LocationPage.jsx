@@ -1,33 +1,24 @@
-import { useParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
-import { locations } from "../../data";
-
-import "./location.css";
+import React from "react";
+import { Helmet } from "react-helmet"; // optional, but helps SEO
 
 const LocationPage = () => {
-  const { city } = useParams();
-
-  const location = locations.find((loc) => loc.slug === city);
-
-  if (!location) {
-    return (
-      <div className="location-container">
-        <h1 className="not-found ">City Not Found</h1>
-        <p>This location doesn’t exist in our list.</p>
-      </div>
-    );
-  }
-
   return (
-    <div className="location-title">
+    <div className="location-container">
       <Helmet>
-        <title>{location.heading} | ThinkTech</title>
-        <meta name="description" content={location.description} />
+        <title>Tech Skills in Delta | ThinkTech</title>
+        <meta
+          name="description"
+          content="ThinkTech offers hands-on tech skill acquisition programs in Lagos, Nigeria, empowering kids and adults with real-world digital skills."
+        />
       </Helmet>
 
-      <h1 className="text-3xl font-bold mb-4">{location.heading}</h1>
+      <h1 className="location-title">Tech Skills in Delta, Sapele</h1>
 
-      <p className="location-description ">{location.description}</p>
+      <p className="location-description">
+        ThinkTech offers hands-on tech skill acquisition programs in{" "}
+        <strong>Sapele, Delta State, Nigeria</strong>, empowering both kids and
+        adults with real-world digital skills.
+      </p>
 
       <ul className="location-features">
         <li>In-person and online classes</li>
@@ -36,7 +27,13 @@ const LocationPage = () => {
         <li>Certificates upon completion</li>
       </ul>
 
-      <p className="enroll-link">
+      <p className="location-description">
+        Whether you're a student, professional, or parent looking for
+        skill-building opportunities for your kids, ThinkTech has the right
+        program for you in Lagos.
+      </p>
+
+      <p className="enroll-link ">
         <a href="/enroll">Enroll Now</a>
       </p>
     </div>
