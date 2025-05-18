@@ -555,6 +555,7 @@ const weOffer = [
 const coursePageData = [
   {
     id: 1,
+    slug: "web-development",
     course_img: Course_1,
     course_title: "Full Stack",
     authorImg: SoftwareDeveloper,
@@ -605,6 +606,7 @@ const coursePageData = [
   },
   {
     id: 2,
+    slug: "data-analysis",
     course_img: Course_3,
     course_title: "Data Analysis",
     authorImg: DataInstructor2,
@@ -655,6 +657,7 @@ const coursePageData = [
   },
   {
     id: 3,
+    slug: "animation",
     course_img: Course_2,
     course_title: "Animation",
     authorImg: Course_1,
@@ -706,6 +709,7 @@ const coursePageData = [
   },
   {
     id: 4,
+    slug: "forex",
     course_img: Course_2,
     course_title: "Forex",
     authorImg: ForexProfessional,
@@ -756,6 +760,7 @@ const coursePageData = [
   },
   {
     id: 5,
+    slug: "microsoft-suite",
     course_img: Course_3,
     course_title: "Microsoft Suite",
     authorImg: Course_1,
@@ -806,6 +811,7 @@ const coursePageData = [
   },
   {
     id: 6,
+    slug: "mobile-development",
     course_img: Course_1,
     course_title: "Mobile Development",
     authorImg: Course_1,
@@ -856,6 +862,7 @@ const coursePageData = [
   },
   {
     id: 7,
+    slug: "virtual-assistance",
     course_img: Course_1,
     course_title: "Virtual Assistance",
     authorImg: VRInstructor,

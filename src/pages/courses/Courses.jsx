@@ -23,6 +23,7 @@ const Courses = () => {
           {coursePageData.map((courses) => {
             const {
               id,
+              slug,
               course_img,
               course_title,
               authorImg,
@@ -132,7 +133,7 @@ const Courses = () => {
                           link={`courses/${id}`}
                         /> */}
                         <Link
-                          to={`/courses/${id}`}
+                          to={`/courses/${slug}`}
                           className="course__action-btn"
                           onClick={() => {
                             window.scrollTo(0, 0);

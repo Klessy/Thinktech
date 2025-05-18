@@ -10,7 +10,7 @@ import { useTitle } from "../../../hooks/useTitle";
 
 const CourseDetail = () => {
   const { courseId } = useParams();
-  const course = coursePageData.find((item) => item.id == courseId);
+  const course = coursePageData.find((item) => item.slug == courseId);
   // useTitle(course.course_title);
   return (
     <>
@@ -24,21 +24,7 @@ const CourseDetail = () => {
         <div className="course__detail-img">
           <img src={CourseImg} alt="" />
         </div>
-        {/* {coursePageData.map((courses) => {
-          const {
-            id,
-            course_img,
-            course_title,
-            authorImg,
-            author_title,
-            course_desc,
-            lessons,
-            price,
-            course_details,
-            // overview: { course_complete_desc, you_will_learn, certification },
-            // introduction: { course_introduction },
-          } = courses; */}
-        {/* return ( */}
+
         <div className=" container course__detail-con">
           <article className="course-content-wrapper">
             <div className="course__detail-content">

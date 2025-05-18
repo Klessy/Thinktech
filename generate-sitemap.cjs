@@ -3,20 +3,30 @@ const path = require("path");
 const { pathToFileURL } = require("url");
 
 (async () => {
-  const domain = "https://thinktech.com.ng"; // ✅ Replace with your domain
+  const domain = "https://thinktech.com.ng";
 
-  // Convert path to file URL (important fix for Windows)
+  // 1. Load routes
   const routesModuleURL = pathToFileURL(path.resolve("./src/routes.js"));
   const routesModule = await import(routesModuleURL.href);
   const routeObj = routesModule.default;
 
-  const routes = Object.values(routeObj).filter(
+  // 2. Load coursePageData from named export in data.jsx
+  const dataModuleURL = pathToFileURL(path.resolve("./src/courseSlug.js"));
+  const dataModule = await import(dataModuleURL.href);
+  const courseData = dataModule.coursePageData; // ✅ Use named export
+
+  const courseSlugs = courseData.map((course) => course.slug);
+  const dynamicCourseRoutes = courseSlugs.map((slug) => `/courses/${slug}`);
+
+  const staticRoutes = Object.values(routeObj).filter(
     (route) => !route.includes(":") && route !== "*"
   );
 
+  const allRoutes = [...staticRoutes, ...dynamicCourseRoutes];
+
   const xml =
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-    routes
+    allRoutes
       .map((route) => `  <url><loc>${domain}${route}</loc></url>`)
       .join("\n") +
     `\n</urlset>`;

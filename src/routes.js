@@ -3,7 +3,7 @@ const routes = {
   home: "/",
   about: "/about",
   contact: "/contact",
-  enroll: "/eroll",
+  enroll: "/enroll",
   courses: "/courses",
   how_it_works: "/how_it_works",
   courseId: "/courses/:courseId",
