@@ -2,8 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 const SEO = ({
-  title = "ThinkBridge Technologies",
-  description = "Tech training and digital solutions for individuals and businesses in Nigeria.",
+  title = "ThinkTech – Tech Training & Website Development",
+  description = "ThinkTech offers expert tech training, online courses, and web development services for kids and adults. Learn with us today.",
   keywords = "Tech training, Web development, Online learning, Nigeria, Digital skills",
   url = "https://thinktech.com.ng",
   location = "Sapele, Delta State, Nigeria",
@@ -15,6 +15,7 @@ const SEO = ({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Thinktech Academy",
+    alternateName: "ThinkTech",
     description: description,
     url: url,
     telephone: phone,
@@ -38,12 +39,12 @@ const SEO = ({
       <title> {title} </title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="author" content="Thinktech Technologies" />
+      <meta name="author" content="Thinktech" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Thinktech Technologies" />
+      <meta property="og:site_name" content="Thinktech Academy" />
       <meta property="og:locale" content="en_NG" />
       <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
     </Helmet>
