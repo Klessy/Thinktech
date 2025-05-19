@@ -1,4 +1,5 @@
 import { BreadCrumb, Button, SEO } from "../../components";
+import { FaWhatsapp } from "react-icons/fa";
 import Contact from "../contact/Contact";
 import PaystackPop from "@paystack/inline-js";
 
@@ -114,8 +115,28 @@ const Payment = () => {
               </li> */}
               </ul>
 
-              <div className="action-btn">
+              {/* <div className="action-btn">
                 <Button text={"Join a Class"} link={""} />
+              </div> */}
+              <div className="action-btn">
+                <a
+                  href="https://wa.me/2349035917372?text=Hello%20ThinkTech%2C%20I%27m%20interested%20in%20your%20courses!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    backgroundColor: "green",
+                    color: "white",
+                    padding: "10px 20px",
+                    borderRadius: "5px",
+                    textDecoration: "none",
+                  }}
+                >
+                  <FaWhatsapp size={20} />
+                  Join class
+                </a>
               </div>
             </div>
           </div>
