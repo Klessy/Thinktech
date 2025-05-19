@@ -26,6 +26,7 @@
 .plan {
   margin: 3rem 0;
   display: flex;
+  align-items: flex-start;
   /* gap: 1rem; */
 }
 
@@ -104,9 +105,26 @@
   padding-right: 10px;
 }
 
+.price-list > li {
+  font-size: 18px;
+}
+
 .action-btn {
   margin: 0 auto;
   padding: 4rem 0;
+}
+
+.price-action {
+  display: flex;
+  align-items: center;
+}
+
+/* */
+
+.price-list-action i {
+  color: #7665ff;
+  fill: #7665ff;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 900px) {

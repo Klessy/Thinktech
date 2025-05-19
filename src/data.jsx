@@ -1069,6 +1069,34 @@ const locations = [
   },
 ];
 
+//Plans
+const plans = [
+  {
+    name: "Gold",
+    price: "25,000",
+    features: ["Access to all beginner courses", "Support group"],
+    time: "Flexible",
+    maxStudent: 4,
+    reschedule: "No",
+    hours: 8,
+    duration: 1,
+    courses: 1,
+    classes: 8,
+  },
+  {
+    name: "Diamond",
+    price: "50,000",
+    features: ["Everything in Gold", "1-on-1 Mentorship", "Premium materials"],
+    time: "Flexible",
+    maxStudent: 4,
+    reschedule: "No",
+    hours: 8,
+    duration: 1,
+    courses: 1,
+    classes: 12,
+  },
+];
+
 export default locations;
 
 export {
@@ -1084,4 +1112,5 @@ export {
   courseContent,
   teamPageData,
   locations,
+  plans,
 };

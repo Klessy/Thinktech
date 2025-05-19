@@ -30,7 +30,7 @@ const Hero = () => {
                     >
                       {desc}
                     </p>
-                    <Link className="btn_main" to="">
+                    <Link className="btn_main" to="/enroll">
                       <FaCirclePlus
                         style={{
                           color: "white",

@@ -2,6 +2,8 @@ import { BreadCrumb, Button, SEO } from "../../components";
 import { FaWhatsapp } from "react-icons/fa";
 import Contact from "../contact/Contact";
 import PaystackPop from "@paystack/inline-js";
+import { plans } from "../../data";
+import WhatsAppButton from "./WhatsAppButton";
 
 import "./payment.css";
 
@@ -34,111 +36,72 @@ const Payment = () => {
           </p>
           <h2 className="price-subtitle">Our Pricing</h2>
           <div className="plan">
-            <div className="gold">
-              <h3>Gold</h3>
-              <span className="pricing-price">
-                <sup className="currency">₦</sup>
-                <span>25,000</span>
-                <sub className="period">/Month</sub>
-              </span>
-              <ul className="pricing-lists">
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Students: 4
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Time/Date: Flexible
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Reschedule class: No
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Classes: 8
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Hours: 8
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Duration: 1 Month
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Courses: 1
-                </li>
-              </ul>
-
-              <div className="action-btn">
-                <Button text={"Join a Class"} link={""} />
-              </div>
-            </div>
-
-            <div className="diamond">
-              <h3>Diamond</h3>
-              <span className="pricing-price">
-                <sup className="currency">₦</sup>
-                <span>50,000</span>
-                <sub className="period">/Month</sub>
-              </span>
-              <ul className="pricing-lists">
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Students: 1
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Time/Date: Flexible
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Reschedule class: Yes
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Classes: 12
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Hours: 1:30mins
-                </li>
-                <li class="price-list">
-                  <i aria-hidden="true" class="far fa-check-circle"></i>
-                  Duration: 1 Month
-                </li>
-                {/* <li class="price-list">
-                <i aria-hidden="true" class="far fa-check-circle"></i>
-                Courses: 1
-              </li> */}
-              </ul>
-
-              {/* <div className="action-btn">
-                <Button text={"Join a Class"} link={""} />
-              </div> */}
-              <div className="action-btn">
-                <a
-                  href="https://wa.me/2349035917372?text=Hello%20ThinkTech%2C%20I%27m%20interested%20in%20your%20courses!"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    backgroundColor: "green",
-                    color: "white",
-                    padding: "10px 20px",
-                    borderRadius: "5px",
-                    textDecoration: "none",
-                  }}
-                >
-                  <FaWhatsapp size={20} />
-                  Join class
-                </a>
-              </div>
-            </div>
+            {plans.map((plan) => {
+              const {
+                name,
+                price,
+                features,
+                time,
+                maxStudent,
+                reschedule,
+                hours,
+                duration,
+                courses,
+                classes,
+              } = plan;
+              return (
+                <div className="gold">
+                  <h3>{name}</h3>
+                  <span className="pricing-price">
+                    <sup className="currency">₦</sup>
+                    <span>{price}</span>
+                    <sub className="period">/Month</sub>
+                  </span>
+                  <ul className="pricing-lists">
+                    <li class="price-list">
+                      <i aria-hidden="true" class="far fa-check-circle"></i>
+                      Students: {maxStudent}
+                    </li>
+                    <li class="price-list">
+                      <i aria-hidden="true" class="far fa-check-circle"></i>
+                      Time/Date: {time}
+                    </li>
+                    <li class="price-list">
+                      <i aria-hidden="true" class="far fa-check-circle"></i>
+                      Reschedule class: {reschedule}
+                    </li>
+                    <li class="price-list">
+                      <i aria-hidden="true" class="far fa-check-circle"></i>
+                      Classes: {classes}
+                    </li>
+                    <li class="price-list">
+                      <i aria-hidden="true" class="far fa-check-circle"></i>
+                      Hours: {hours}
+                    </li>
+                    <li class="price-list">
+                      <i aria-hidden="true" class="far fa-check-circle"></i>
+                      Duration: {duration} Month
+                    </li>
+                    <li class="price-list">
+                      <i aria-hidden="true" class="far fa-check-circle"></i>
+                      Courses: {courses}
+                    </li>
+                  </ul>
+                  <ul>
+                    {plan.features.map((feat, i) => (
+                      <li className="price-list price-action">
+                        <i aria-hidden="true" class="far fa-check-circle"></i>
+                        <li key={i}>{feat}</li>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="action-btn">
+                    {/* <Button text={"Join a Class"} link={""} /> */}
+                    <WhatsAppButton plan={plan} />
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
