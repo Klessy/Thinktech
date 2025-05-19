@@ -117,10 +117,15 @@ export const navLink = [
     name: "Team",
     path: "/team",
   },
+  // {
+  //   id: 6,
+  //   name: "Contact",
+  //   path: "/contact",
+  // },
   {
-    id: 6,
-    name: "Contact",
-    path: "/contact",
+    id: 7,
+    name: "Enroll",
+    path: "/enroll",
   },
 ];
 
