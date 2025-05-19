@@ -50,7 +50,7 @@ const Payment = () => {
                 classes,
               } = plan;
               return (
-                <div className="gold">
+                <div className="gold diamond">
                   <h3>{name}</h3>
                   <span className="pricing-price">
                     <sup className="currency">₦</sup>

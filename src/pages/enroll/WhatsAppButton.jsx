@@ -26,7 +26,7 @@ const WhatsAppButton = ({ plan }) => {
       }}
     >
       <FaWhatsapp size={20} />
-      Chat about {plan.name}
+      Join Class
     </a>
   );
 };
